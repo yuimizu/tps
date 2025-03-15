@@ -10,49 +10,78 @@
     <link rel="stylesheet" href="../css/home.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">ロゴ</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <div class="headerRight ml-auto">
-                <div class="headerRightTop">
-                    <a href="" class="headerEvent"><i class="bi bi-pin me-1"></i>イベント情報</a>
-                    <a href="" class="headerNews"><i class="bi bi-info-circle-fill me-1"></i>新着情報</a>
-                    <a href="" class="headercal"><i class="bi bi-calendar-fill me-1"></i>開運カレンダー</a>
-                    <a href="" class="headerAfter"><i class="bi bi-scissors me-1"></i>修理・お直し</a>
-                    <a href="" target="_blank" class="headerEc"><i class="bi bi-bag me-1"></i>公式オンラインショップ</a>  
-                </div>
-                <div class="headerRightBottom">
-                    <a href="" class="key">トップページ</a>
-                    <a href="" class="key">天珠について</a>
-                    <a href="" class="key">取扱商品</a>
-                    <a href="" class="key">浄化とは</a>
-                    <a href="" class="key">コンセプト</a>
-                    <a href="" class="key">ショップリスト</a>  
-                </div>
-            </div>
-        </div>
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">ロゴ</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse"  id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto"> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">天珠について</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">眼人とは</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">お知らせ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">天珠の購入</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">よくある質問</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">お問い合わせ</a>
+                    </li>
+                    <li class="nav-item">
+                        <p class="nav-link sns-link">
+                            <span class="sns-title">SNS</span>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#"><i class="bi bi-line"></i></a>
+                            <a href="#"><img src="../img/mercari.png" style="width: 30px;"></a>
+                        </p>
+                    </li>
+                </ul>
+            </div>  
+        </div>   
     </nav>
-
+    
     <div class="swf">
         <div class="container">
-            <div class="swfMovie">
-                <video src="" autoplay="" loop="" muted="" playsinline="" width="100%"></video>
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="7000">
+                    <video class="video-background" autoplay loop muted playsinline>
+                        <source src="../img/background1.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="7000">
+                    <video class="video-background" autoplay loop muted playsinline>
+                        <source src="../img/background2.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <div class="swfMovieSp">
-                <video src="" autoplay="" loop="" muted="" playsinline="" width="100%"></video>
-            </div>
-            <a href="">
-				<div class="swfNews">
-					<div class="swfNewsNews">NEWS</div>
-					<div class="swfNewsDate">2025-02-21</div>
-					<div class="sps"></div>
-					<div class="swfNewsTitle">Spring Collection販売開始</div>
-					<div class="sp"></div>
-				</div>
-			</a>
+            <a href="" target="_blank">
+                <div class="swfshop">
+                    <i class="bi bi-cart-dash fs-2"></i>
+                    <span class="swfTitle">ONLINE SHOP</span>
+                    <div>公式オンラインショップ</div>
+                </div>
+			</a>   
         </div>
     </div>
     
@@ -61,22 +90,18 @@
             <div class="row align-items-center">
                 <!-- 左側の画像 -->
                 <div class="col-md-6">
-                    <img src="https://placehold.jp/437x377.png">
+                    <img src="../img/top001.jpg" style="width: 437px; height: 377px;">
                 </div>
                 <!-- 右側のコンテンツ -->
                 <div class="col-md-6">
-                    <div class="mb-3 text-end">
-                        <img src="https://placehold.jp/156x156.png">
-                    </div>
                     <div class="text-start">
-                        <h2 class="fw-bold">わたしは、わたしであればいい。</h2>
+                        <h2 class="fw-bold">天珠と生きる、自分らしい輝き</h2>
                         <p class="mt-3">
-                            石に秘められたパワーがあなたを守り、<br>
-                            なりたい自分に導いてくれる。<br>
-                            何気ない毎日も、特別な一日も、<br>
-                            「わたしは、わたしであればいい。」<br>
-                            そう自分の気持ちを後押ししてくれる<br>
-                            パワーストーンジュエリー。
+                            天珠は古代チベットから伝わる神秘的な力を持つ石として<br>
+                            古来より多くの人々に愛されてきました。<br>
+                            <br>
+                            その力は持ち主の潜在能力を引き出し、願いを叶え、<br>
+                            人生をより良い方向へと導くと信じられています。
                         </p>
                         <a href="" class="more mt-3">● MORE</a>
                     </div>
@@ -121,7 +146,11 @@
         </div>
     </section>
 
-    <section class=" mt-5 top003">
+    <div class="mt-5 fortune-telling">
+        <a href="https://yuimizu.github.io/random/index.html" target="_blank">天珠を占う</a>
+    </div>
+
+    <section class="mt-5 top003">
         <div class="container">
             <h2 class="top003Dzi mb-3">天珠</h2>
             <div class="row">
@@ -134,208 +163,164 @@
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="carousel-container">
-            <div class="carousel-items">
-            <!-- 4 Product Items -->
-                <div class="carousel-item">
-                    <a href="#" target="_blank">
-                        <div class="card">
-                            <div class="loopImg">
-                                <img src="https://tpscoco.com/html/upload/save_image/1119144228_673c25448fa20.jpg" class="card-img-top" alt="水蓮花天珠(S)ブレスレット">
+            <div id="Carousel" class="carousel slide mt-5">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-6 col-md-3">
+                                <div class="card">
+                                    <img src="https://placehold.jp/167x167.png" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="card-body">
-                                <div class="loopCat">サードニクス　水晶</div>
-                                <h5 class="loopTitle">水蓮花天珠(S)ブレスレット</h5>
-                                <p class="loopText">他者の思惑に染まらず自分らしく生きられる</p>
+                            <div class="col-6 col-md-3">
+                                <div class="card">
+                                    <img src="https://placehold.jp/167x167.png" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="card">
+                                    <img src="https://placehold.jp/167x167.png" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="card">
+                                    <img src="https://placehold.jp/167x167.png" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </a>
-                </div>
-
-                <div class="carousel-item">
-                    <a href="#" target="_blank">
-                        <div class="card">
-                            <div class="loopImg">
-                                <img src="https://tpscoco.com/html/upload/save_image/0218140458_67b414fa44cda.jpg" class="card-img-top" alt="黒白天珠ブレスレット">
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-6 col-md-3">
+                                <div class="card">
+                                    <img src="https://placehold.jp/167x167.png" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="card-body">
-                                <div class="loopCat">ゴールドヘマタイト　マザーオブパール</div>
-                                <h5 class="loopTitle">黒白天珠ブレスレット</h5>
-                                <p class="loopText">陰と陽・男性と女性など、対極するものを調和</p>
+                            <div class="col-6 col-md-3">
+                                <div class="card">
+                                    <img src="https://placehold.jp/167x167.png" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="carousel-item">
-                    <a href="#" target="_blank">
-                        <div class="card">
-                            <div class="loopImg">
-                                <img src="https://tpscoco.com/html/upload/save_image/0906142644_66da92949f9b4.jpg" class="card-img-top" alt="蓮花羊眼板天珠ブレスレット">
+                            <div class="col-6 col-md-3">
+                                <div class="card">
+                                    <img src="https://placehold.jp/167x167.png" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="card-body">
-                                <div class="loopCat">ゴールドヘマタイト　マザーオブパール</div>
-                                <h5 class="loopTitle">蓮花羊眼板天珠ブレスレット</h5>
-                                <p class="loopText">邪悪なものを防ぐ強力な魔除けとして伝えられる</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="carousel-item">
-                    <a href="#" target="_blank">
-                        <div class="card">
-                            <div class="loopImg">
-                                <img src="https://tpscoco.com/html/upload/save_image/0912110346_66e24c02e0bec.jpg" class="card-img-top" alt="金剛杵天珠ブレスレット">
-                            </div>
-                            <div class="card-body">
-                                <div class="loopCat">ゴールドヘマタイト　水晶</div>
-                                <h5 class="loopTitle">金剛杵天珠ブレスレット</h5>
-                                <p class="loopText">打ち破れない確固たるものの象徴。煩悩を断ち切る力</p>
+                            <div class="col-6 col-md-3">
+                                <div class="card">
+                                    <img src="https://placehold.jp/167x167.png" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </a>
-                </div>
-
-                <div class="carousel-item">
-                    <a href="#" target="_blank">
-                        <div class="card">
-                            <div class="loopImg">
-                                <img src="https://tpscoco.com/html/upload/save_image/1119144228_673c25448fa20.jpg" class="card-img-top" alt="水蓮花天珠(S)ブレスレット">
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-6 col-md-3">
+                                <div class="card">
+                                    <img src="https://placehold.jp/167x167.png" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="card-body">
-                                <div class="loopCat">サードニクス　水晶</div>
-                                <h5 class="loopTitle">水蓮花天珠(S)ブレスレット</h5>
-                                <p class="loopText">他者の思惑に染まらず自分らしく生きられる</p>
+                            <div class="col-6 col-md-3">
+                                <div class="card">
+                                    <img src="https://placehold.jp/167x167.png" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="carousel-item">
-                    <a href="#" target="_blank">
-                        <div class="card">
-                            <div class="loopImg">
-                                <img src="https://tpscoco.com/html/upload/save_image/1119144228_673c25448fa20.jpg" class="card-img-top" alt="水蓮花天珠(S)ブレスレット">
+                            <div class="col-6 col-md-3">
+                                <div class="card">
+                                    <img src="https://placehold.jp/167x167.png" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="card-body">
-                                <div class="loopCat">サードニクス　水晶</div>
-                                <h5 class="loopTitle">水蓮花天珠(S)ブレスレット</h5>
-                                <p class="loopText">他者の思惑に染まらず自分らしく生きられる</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="carousel-item">
-                    <a href="#" target="_blank">
-                        <div class="card">
-                            <div class="loopImg">
-                                <img src="https://tpscoco.com/html/upload/save_image/1119144228_673c25448fa20.jpg" class="card-img-top" alt="水蓮花天珠(S)ブレスレット">
-                            </div>
-                            <div class="card-body">
-                                <div class="loopCat">サードニクス　水晶</div>
-                                <h5 class="loopTitle">水蓮花天珠(S)ブレスレット</h5>
-                                <p class="loopText">他者の思惑に染まらず自分らしく生きられる</p>
+                            <div class="col-6 col-md-3">
+                                <div class="card">
+                                    <img src="https://placehold.jp/167x167.png" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-
-                <div class="carousel-item">
-                    <a href="#" target="_blank">
-                        <div class="card">
-                            <div class="loopImg">
-                                <img src="https://tpscoco.com/html/upload/save_image/1119144228_673c25448fa20.jpg" class="card-img-top" alt="水蓮花天珠(S)ブレスレット">
-                            </div>
-                            <div class="card-body">
-                                <div class="loopCat">サードニクス　水晶</div>
-                                <h5 class="loopTitle">水蓮花天珠(S)ブレスレット</h5>
-                                <p class="loopText">他者の思惑に染まらず自分らしく生きられる</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="carousel-item">
-                    <a href="#" target="_blank">
-                        <div class="card">
-                            <div class="loopImg">
-                                <img src="https://tpscoco.com/html/upload/save_image/1119144228_673c25448fa20.jpg" class="card-img-top" alt="水蓮花天珠(S)ブレスレット">
-                            </div>
-                            <div class="card-body">
-                                <div class="loopCat">サードニクス　水晶</div>
-                                <h5 class="loopTitle">水蓮花天珠(S)ブレスレット</h5>
-                                <p class="loopText">他者の思惑に染まらず自分らしく生きられる</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="carousel-item">
-                    <a href="#" target="_blank">
-                        <div class="card">
-                            <div class="loopImg">
-                                <img src="https://tpscoco.com/html/upload/save_image/1119144228_673c25448fa20.jpg" class="card-img-top" alt="水蓮花天珠(S)ブレスレット">
-                            </div>
-                            <div class="card-body">
-                                <div class="loopCat">サードニクス　水晶</div>
-                                <h5 class="loopTitle">水蓮花天珠(S)ブレスレット</h5>
-                                <p class="loopText">他者の思惑に染まらず自分らしく生きられる</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-
-                <div class="carousel-item">
-                    <a href="#" target="_blank">
-                        <div class="card">
-                            <div class="loopImg">
-                                <img src="https://tpscoco.com/html/upload/save_image/1119144228_673c25448fa20.jpg" class="card-img-top" alt="水蓮花天珠(S)ブレスレット">
-                            </div>
-                            <div class="card-body">
-                                <div class="loopCat">サードニクス　水晶</div>
-                                <h5 class="loopTitle">水蓮花天珠(S)ブレスレット</h5>
-                                <p class="loopText">他者の思惑に染まらず自分らしく生きられる</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-
-                
+                <button class="carousel-control-prev" type="button" data-bs-target="#Carousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#Carousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
-
         
-        <a href="" target="_blank" class="mt-4">
-            <div class="top003Go">公式オンラインショップ</div>
+        <a href="" target="_blank">
+            <div class="top003Go mt-4">公式オンラインショップ</div>
         </a>
     </section>
 
     <section class="mt-5 top004">
         <div class="container">
             <div class="row align-items-center">
-            <!-- 左側画像 -->
-            <div class="col-md-6">
-                <img src="https://placehold.jp/512x317.png" class="img-fluid" alt="店舗一覧">
-            </div>
+                <div class="col-md-6">
+                    <img src="https://placehold.jp/512x317.png" class="img-fluid" alt="店舗一覧">
+                </div>
 
-            <!-- 右側内容 -->
-            <div class="col-md-6 top004R">
-                <div class="top004Shop text-center mb-2">SHOP</div>
-                <div class="top004ShopTitle text-center mb-3">店舗一覧</div>
-                <div class="top004Line mb-3"></div>
-                <div class="top004Tr text-center mb-3">
-                癒しや安らぎを感じ<br>エネルギーチャージされる空間
+                <div class="col-md-6 top004R">
+                    <div class="top004Shop text-center mb-2">SHOP</div>
+                    <div class="top004ShopTitle text-center mb-3">店舗一覧</div>
+                    <div class="top004Line mb-3"></div>
+                    <div class="top004Tr text-center mb-3">
+                    癒しや安らぎを感じ<br>エネルギーチャージされる空間
+                    </div>
+                    <div class="text-center">
+                    <a href="">● MORE</a>
+                    </div>
                 </div>
-                <div class="text-center">
-                <a href="">● MORE</a>
-                </div>
-            </div>
             </div>
         </div>
     </section>
@@ -590,25 +575,27 @@
                     </a>
                 </div>
             </div>
-        </div>
-        
-        <!-- ショップリスト -->
-        <div class="footerBR">
-            <div class="footerBR2">
-                <div class="footer5Title">ショップリスト</div>
-                <a href="">
-                    <div class="footerShop">△△店</div>
-                </a>
-                <a href="">
-                    <div class="footerShop">△△店</div>
-                </a>
-            </div>
-        </div>   
+
+            <!-- ショップリスト -->
+            <div class="col-md-4 mb-4">
+                <div class="footerBL3">
+                    <div class="footer5Title">ショップリスト</div>
+                    <a href="">
+                        <div class="footerShop">△△店</div>
+                    </a>
+                    <a href="">
+                        <div class="footerShop">△△店</div>
+                    </a>
+                </div>
+            </div>   
+        </div>  
     </div>
     <div class="footerBtm mt-4">
         <div class="copy">©The Power Spot</div>
     </div>
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
 </body>
 </html>
