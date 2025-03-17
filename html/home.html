@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="../css/home.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <nav class="navbar navbar-expand-md">
         <div class="container">
             <a class="navbar-brand" href="#">ロゴ</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             
@@ -37,52 +37,45 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">お問い合わせ</a>
                     </li>
-                    <li class="nav-item">
-                        <p class="nav-link sns-link">
-                            <span class="sns-title">SNS</span>
-                            <a href="#"><i class="bi bi-instagram"></i></a>
-                            <a href="#"><i class="bi bi-twitter-x"></i></a>
-                            <a href="#"><i class="bi bi-line"></i></a>
-                            <a href="#"><img src="../img/mercari.png" style="width: 30px;"></a>
-                        </p>
-                    </li>
                 </ul>
+
+                <div class="sns-link ms-auto">
+                    <span>SNS</span>
+                    <a href="#">
+                        <img src="../img/Instagram.png" class="sns-icon">
+                    </a>
+                    <a href="#">
+                        <img src="../img/x.png" class="sns-icon">
+                    </a>
+                    <a href="#">
+                        <img src="../img/LINE.png" class="sns-icon">
+                    </a>
+                    <a href="#">
+                        <img src="../img/mercari.png" class="sns-icon">
+                    </a>
+                </div>
             </div>  
         </div>   
     </nav>
     
     <div class="swf">
-        <div class="container">
-            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active" data-bs-interval="7000">
-                    <video class="video-background" autoplay loop muted playsinline>
-                        <source src="../img/background1.mp4" type="video/mp4">
-                    </video>
-                  </div>
-                  <div class="carousel-item" data-bs-interval="7000">
-                    <video class="video-background" autoplay loop muted playsinline>
-                        <source src="../img/background2.mp4" type="video/mp4">
-                    </video>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-            </div>
+        <div class="d-none d-md-block pc">
+            <video class="video-background" autoplay loop muted playsinline>
+            <source src="../img/pc-img.mp4" type="video/mp4">
+                </video>
+        </div>
+        <div class="d-md-none phone">
+            <video class="video-background" autoplay loop muted playsinline>
+                <source src="../img/background.mp4" type="video/mp4">
+            </video>
+        </div>
             <a href="" target="_blank">
                 <div class="swfshop">
                     <i class="bi bi-cart-dash fs-2"></i>
-                    <span class="swfTitle">ONLINE SHOP</span>
+                    <span class="swfText">ONLINE SHOP</span>
                     <div>公式オンラインショップ</div>
                 </div>
-			</a>   
-        </div>
+            </a>
     </div>
     
     <section class="mt-5 top001">
@@ -90,7 +83,7 @@
             <div class="row align-items-center">
                 <!-- 左側の画像 -->
                 <div class="col-md-6">
-                    <img src="../img/top001.jpg" style="width: 437px; height: 377px;">
+                    <img src="../img/top001.jpg">
                 </div>
                 <!-- 右側のコンテンツ -->
                 <div class="col-md-6">
@@ -112,14 +105,13 @@
 
     <section class=" mt-5 top002">
         <div class="container">
-            <div class="top002Line mb-3"></div>
-            <h2 class="top002Title mb-4">天珠、誕生石、天然石（パワーストーン）</h2>
+            <h2 class="section-title mb-4">天珠</h2>
     
-            <div class="row">
+            <div class="row g-5">
                 <div class="col-md-4">
                     <div class="card-effect">
                         <img src="https://placehold.jp/300x164.png">
-                        <h5 class="mb-0 mt-4">dZi Beads(天珠)</h5>
+                        <h5 class="mb-0 mt-4">天珠</h5>
                         <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, hic!</p>
                         <p class="top002Go">MORE</p>
                     </div>
@@ -128,7 +120,7 @@
                 <div class="col-md-4">
                     <div class="card-effect">
                         <img src="https://placehold.jp/300x164.png">
-                        <h5 class="mb-0 mt-4">誕生石</h5>
+                        <h5 class="mb-0 mt-4">天珠のブレスレット</h5>
                         <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, hic!</p>
                         <p class="top002Go">MORE</p>
                     </div>
@@ -137,7 +129,7 @@
                 <div class="col-md-4">
                     <div class="card-effect">
                         <img src="https://placehold.jp/300x164.png">
-                        <h5 class="mb-0 mt-4">天然石（パワーストーン）</h5>
+                        <h5 class="mb-0 mt-4">天珠のお守り</h5>
                         <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, hic!</p>
                         <p class="top002Go">MORE</p>
                     </div>
@@ -152,18 +144,7 @@
 
     <section class="mt-5 top003">
         <div class="container">
-            <h2 class="top003Dzi mb-3">天珠</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="top003L">文様一つひとつに<br>意味が込められたdZi Beads(天珠)</div>
-                </div>
-                <div class="col-md-6">
-                    <div class="top003R">
-                    叶えたい願いで選ぶ「dZi Beads」は、出会うべくして出会った持ち主に寄り添い、<br>正しい願いや前向きな姿勢に対して、力を貸してくれるといわれています。
-                    </div>
-                </div>
-            </div>
-
+            <h2 class="section-title mb-3">ギャラリー</h2>
             <div id="Carousel" class="carousel slide mt-5">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -299,301 +280,42 @@
         </div>
         
         <a href="" target="_blank">
-            <div class="top003Go mt-4">公式オンラインショップ</div>
+            <div class="top003Go mt-4">
+                <i class="bi bi-cart-dash fs-2"></i>
+                <span class="swfText">ONLINE SHOP</span>
+                <div>公式オンラインショップ</div>
+            </div>
         </a>
     </section>
 
-    <section class="mt-5 top004">
+    <footer class="mt-3">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <img src="https://placehold.jp/512x317.png" class="img-fluid" alt="店舗一覧">
+            <div class="d-flex justify-content-between">
+                <div class="footerLogo">
+                    <a href="">ロゴ</a>
                 </div>
-
-                <div class="col-md-6 top004R">
-                    <div class="top004Shop text-center mb-2">SHOP</div>
-                    <div class="top004ShopTitle text-center mb-3">店舗一覧</div>
-                    <div class="top004Line mb-3"></div>
-                    <div class="top004Tr text-center mb-3">
-                    癒しや安らぎを感じ<br>エネルギーチャージされる空間
-                    </div>
-                    <div class="text-center">
-                    <a href="">● MORE</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="top005">
-        <div class="container">
-            <div class="row">
-                <!-- 左側内容 -->
-                <div class="col-md-6 mb-4">
-                    <div class="top005L">
-                        <div class="top005LTitle text-center mb-3">Fortune-telling</div>
-                        <div class="top005Text  mt-3 text-center">
-                            吉日や開運日に加え、店舗での新月・満月などの<br>浄化の日をチェックし運気アップ！<br>毎日をさらに充実させましょう
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 右側画像リンク -->
-                <div class="col-md-6">
-                    <div class="top005R  d-flex">
-                        <div class="top005R2 mb-3">
-                            <a href="">
-                            <img src="" class="img-fluid linkimg" alt="開運カレンダーをみる">
-                            </a>
-                        </div>
-                        <div class="top005R2 mb-3">
-                            <a href="">
-                            <img src="" class="img-fluid linkimg" alt="今日は何の日かをみる">
-                            </a>
-                        </div>
+                <div class="footerSnsBox">
+                    <div class="footerSns">
+                        <a href="#">
+                            <img src="../img/Instagram.png" class="sns-icon">
+                        </a>
+                        <a href="#">
+                            <img src="../img/x.png" class="sns-icon">
+                        </a>
+                        <a href="#">
+                            <img src="../img/LINE.png" class="sns-icon">
+                        </a>
+                        <a href="#">
+                            <img src="../img/mercari.png" class="sns-icon">
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <section class="mt-5 top006">
-        <div class="container">
-            <div class="row">
-            <!-- 新着情報 -->
-            <div class="col-md-6 mb-4">
-                <div class="top006L">
-                <div class="top002Line"></div>
-                <div class="top002Titile mb-3">新着情報</div>
-                <div class="top006NewsBox">
-                    <a href="" class="d-block mb-3">
-                    <div class="top006News">
-                        <div class="top006NewsDate">2025-02-21</div>
-                        <div class="top006NewsCat">お知らせ</div>
-                        <div class="top006NewsTitle">Spring Collection販売開始</div>
-                    </div>
-                    </a>
-                    <a href="" class="d-block mb-3">
-                    <div class="top006News">
-                        <div class="top006NewsDate">2025-02-01</div>
-                        <div class="top006NewsCat">お知らせ</div>
-                        <div class="top006NewsTitle">アメシストセレクション開催</div>
-                    </div>
-                    </a>
-                    <a href="" class="d-block mb-3">
-                    <div class="top006News">
-                        <div class="top006NewsDate">2025-01-01</div>
-                        <div class="top006NewsCat">商品情報</div>
-                        <div class="top006NewsTitle">巳年限定アイテム販売開始！</div>
-                    </div>
-                    </a>
-                    <a href="" class="d-block mb-3">
-                    <div class="top006News">
-                        <div class="top006NewsDate">2024-11-20</div>
-                        <div class="top006NewsCat">商品情報</div>
-                        <div class="top006NewsTitle">クリスマス限定アイテム12/25(水)まで販売中！</div>
-                    </div>
-                    </a>
-                    <a href="" class="d-block mb-3">
-                    <div class="top006News">
-                        <div class="top006NewsDate">2024-11-18</div>
-                        <div class="top006NewsCat">お知らせ</div>
-                        <div class="top006NewsTitle">Winter Collection 2/21(金)まで！</div>
-                    </div>
-                    </a>
-                </div>
-                </div>
-            </div>
-
-            <!-- イベント情報 -->
-            <div class="col-md-6 mb-4">
-                <div class="top006R">
-                <div class="top002Line"></div>
-                <div class="top002Titile mb-3">イベント情報</div>
-                <div class="top006NewsBox">
-                    <a href="" class="d-block mb-3">
-                    <div class="top006News">
-                        <div class="top006EventDate">2025-03-01～2025-04-30</div>
-                        <div class="top006NewsTitle">浄化の日のご案内</div>
-                    </div>
-                    </a>
-                </div>
-                </div>
-            </div>
-            </div>
+        <div class="footerBtm mt-4">
+            <div class="copy">©The Power Spot</div>
         </div>
-    </section>
-
-    <section class="mt-5 top007">
-        <div class="container">
-            <div class="row">
-            <!-- ショップリスト -->
-            <div class="col-md-6 mb-4">
-                <div class="top006L text-center">
-                <a href="">
-                    <div class="top006List">ショップリスト</div>
-                </a>
-                </div>
-            </div>
-
-            <!-- 公式オンラインショップ -->
-            <div class="col-md-6 mb-4">
-                <div class="top006R text-center">
-                <a href="" target="_blank">
-                    <div class="top006Button">公式オンラインショップ</div>
-                </a>
-                </div>
-            </div>
-            </div>
-
-            <div class="row top006Bottom">
-            <!-- 修理・お直し -->
-            <div class="col-md-4 mb-4">
-                <a href="">
-                <div class="top006Bottom1 text-center">
-                    <div class="top006BottomEn">After service</div>
-                    <div class="top006BottomTitle3">修理・お直し</div>
-                </div>
-                </a>
-            </div>
-
-            <!-- 浄化サービス -->
-            <div class="col-md-4 mb-4">
-                <a href="">
-                <div class="top006Bottom1 text-center">
-                    <div class="top006BottomEn">Purification Services</div>
-                    <div class="top006BottomTitle2">浄化サービス</div>
-                </div>
-                </a>
-            </div>
-
-            <!-- 開運カレンダー -->
-            <div class="col-md-4 mb-4">
-                <a href="">
-                <div class="top006Bottom2 text-center">
-                    <div class="top006BottomEn">Good Luck Calendar</div>
-                    <div class="top006BottomTitle1">開運カレンダー</div>
-                </div>
-                </a>
-            </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-    <div class="container">
-        <!-- ロゴとSNSリンク -->
-        <div class="d-flex justify-content-between mb-5">
-            <div class="footerLogo">
-                <a href="">ロゴ</a>
-            </div>
-            <div class="footerSnsBox">
-                <div class="footerSns">
-                    <a href="#" target="_blank"><i class="bi bi-instagram" style="width: 30px;"></i></a>
-                </div>
-                <a href="" target="_blank">
-                    <div class="footerEc">公式オンラインショップ</div>
-                </a>
-            </div>
-        </div>
-
-        <!-- セクションリンク -->
-        <div class="row">
-            <!-- コンセプト -->
-            <div class="col-md-4 mb-4">
-                <div class="footerBL3">
-                    <div class="footer5Title">コンセプト</div>
-                    <a href="">
-                        <div class="footer5Text">・○○とは</div>
-                    </a>
-                </div>
-            </div>
-    
-            <!-- 天珠について -->
-            <div class="col-md-4 mb-4">
-                <div class="footerBL3">
-                    <div class="footer5Title">天珠について</div>
-                    <a href="">
-                        <div class="footer5Text">・意味が込められたdZi Beads</div>
-                    </a>
-                </div>
-            </div>
-    
-            <!-- 会社情報 -->
-            <div class="col-md-4 mb-4">
-                <div class="footerBL3">
-                    <div class="footer5Title">会社情報</div>
-                    <a href="">
-                        <div class="footer5Text">・会社概要</div>
-                    </a>
-                </div>
-            </div>
-    
-            <!-- 取扱商品 -->
-            <div class="col-md-4 mb-4">
-                <div class="footerBL3">
-                    <div class="footer5Title">取扱商品</div>
-                    <a href="">
-                        <div class="footer5Text">・dZi Beads（天珠）</div>
-                    </a>
-                    <a href="">
-                        <div class="footer5Text">・誕生石</div>
-                    </a>
-                    <a href="">
-                        <div class="footer5Text">・天然石（パワーストーン）</div>
-                    </a>
-                    <a href="">
-                        <div class="footer5Text">・原石</div>
-                    </a>
-                    <a href="">
-                        <div class="footer5Text">・浄化</div>
-                    </a>
-                    <a href="">
-                        <div class="footer5Text">・その他</div>
-                    </a>
-                </div>
-            </div>
-    
-            <!-- その他 -->
-            <div class="col-md-4 mb-4">
-                <div class="footerBL3">
-                    <div class="footer5Title">その他</div>
-                    <a href="">
-                        <div class="footerEvent">イベント情報</div>
-                    </a>
-                    <a href="">
-                        <div class="footerNews">新着情報</div>
-                    </a>
-                    <a href="">
-                        <div class="footerAft">修理・お直し</div>
-                    </a>
-                    <a href="">
-                        <div class="footerAf">浄化とは</div>
-                    </a>
-                    <a href="">
-                        <div class="footerCal">開運カレンダー</div>
-                    </a>
-                </div>
-            </div>
-
-            <!-- ショップリスト -->
-            <div class="col-md-4 mb-4">
-                <div class="footerBL3">
-                    <div class="footer5Title">ショップリスト</div>
-                    <a href="">
-                        <div class="footerShop">△△店</div>
-                    </a>
-                    <a href="">
-                        <div class="footerShop">△△店</div>
-                    </a>
-                </div>
-            </div>   
-        </div>  
-    </div>
-    <div class="footerBtm mt-4">
-        <div class="copy">©The Power Spot</div>
-    </div>
-</footer>
+    </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
