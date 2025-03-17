@@ -15,6 +15,10 @@ a {
     background-color: #fff; 
 }
 
+.navbar-brand img {
+    width: 100px;
+}
+
 #navbarNavDropdown {
     flex-direction: column;
 }
@@ -79,13 +83,6 @@ a {
     .swf video {
         height: 500px;
     }
-
-    .swfshop {
-        position: static; 
-        width: 90%;
-        border-top-left-radius: 0;
-        margin: 0 auto;
-    }
 }
 
 .swfText {
@@ -113,8 +110,22 @@ a {
 }
 
 .top002 {
-    background-color: #faf0e6;
-    padding: 50px 0px;
+    position: relative;
+    padding: 10px 0 30px;
+}
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; 
+}
+
+.top002 .section-title {
+    color: #f7f7f7;
 }
 
 .section-title {
@@ -127,12 +138,47 @@ a {
     padding: 25px;
 }
 
+.ranking {
+    display: block;
+    color: #4B0082;
+    margin: 0 0 5px 10px;
+}
+
+.key {
+    margin-top: 25px;
+}
+
+#carousel-ranking .carousel-control-next {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    top: auto;
+}
+
+#carousel-ranking .carousel-control-next-icon {
+    width: 40px;
+    height: 40px;
+}
+
+@media (max-width: 767px){
+    #carousel-ranking .carousel-control-next {
+        width: 40px;
+        height: 40px;
+    }
+
+    #carousel-ranking .carousel-control-next-icon {
+        width: 20px;
+        height: 20px;
+    }
+}
+
 .fortune-telling a {
     display: block;
     background-color: #2D1E6B; 
     color: #fff;
     padding: 15px 0px; 
-    width: 300px;
+    width: 90%;
     text-align: center;
     margin: 0 auto;
     font-size: 30px;
@@ -142,7 +188,7 @@ a {
     background-color: #4B0082;
 }
 
-.top003Go {
+.top004Go {
     width: 300px;
     border: solid 1px #333;
     text-align: center;
@@ -155,6 +201,10 @@ a {
 footer {
     background-color: #f7f7f7;
     padding-top: 30px;
+}
+
+.footerLogo img {
+    width: 150px;
 }
 
 .footerSns {
