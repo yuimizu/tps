@@ -1,0 +1,89 @@
+body {
+    margin: 0px;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar {
+    background-color: #fff; 
+}
+
+.navbar-brand img {
+    width: 200px;
+}
+
+#navbarNavDropdown {
+    flex-direction: column;
+}
+
+.sns-link span {
+    margin-right: 5px; 
+    vertical-align: middle;  
+}
+
+.sns-icon {
+    width: 30px;
+    margin-right: 10px;
+}
+
+@media (max-width: 767px){
+    .navbar {
+        background-color: transparent;
+    }
+
+    #navbarNavDropdown {
+        background-color: rgba(255, 255, 255, 0.5);
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+#accordionTenju {
+    max-width: 990px;
+    margin: 0 auto;
+}
+
+.name {
+    color: #7da5ba;
+    font-size: 1.5rem;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: gray;
+    margin: 20px 10px;
+}
+
+@media (max-width: 767px){
+    .accordion-button {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; 
+        text-align: left;  
+        padding: 5px 10px;
+    }
+
+    .subtitle {
+        margin: 0;
+    }
+    
+}
+
+
+footer {
+    background-color: #f7f7f7;
+    padding-top: 30px;
+}
+
+.footerLogo img {
+    width: 230px;
+}
+
+.footerSns {
+    text-align: end;
+    font-size: 40px;
+}

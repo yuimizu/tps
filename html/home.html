@@ -12,7 +12,7 @@
 <body>
     <nav class="navbar navbar-expand-md">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="home.html">
                 <img src="../img/logo.jpg">
             </a>
             <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,22 +22,22 @@
             <div class="collapse navbar-collapse"  id="navbarNavDropdown">
                 <ul class="navbar-nav ms-auto"> 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">天珠について</a>
+                        <a class="nav-link" href="tenju.html">天珠について</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">眼人とは</a>
+                        <a class="nav-link" href="">眼人とは</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">お知らせ</a>
+                        <a class="nav-link" href="">お知らせ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">天珠の購入</a>
+                        <a class="nav-link" href="">天珠の購入</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">よくある質問</a>
+                        <a class="nav-link" href="">よくある質問</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">お問い合わせ</a>
+                        <a class="nav-link" href="">お問い合わせ</a>
                     </li>
                 </ul>
 
@@ -61,23 +61,31 @@
     </nav>
     
     <div class="swf">
-        <div class="d-none d-md-block pc">
-            <video class="video-background" autoplay loop muted playsinline>
-            <source src="../img/pc-img.mp4" type="video/mp4">
+        <div id="carouselIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <video class="video-background d-block w-100" autoplay loop muted playsinline>
+                    <source src="../img/swfVideo1.mp4" type="video/mp4">
                 </video>
+              </div>
+              <div class="carousel-item">
+                <video class="video-background d-block w-100" autoplay loop muted playsinline>
+                    <source src="../img/swfVideo2.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
         </div>
-        <div class="d-md-none phone">
-            <video class="video-background" autoplay loop muted playsinline>
-                <source src="../img/background.mp4" type="video/mp4">
-            </video>
-        </div>
-            <a href="" target="_blank">
-                <div class="swfshop">
-                    <i class="bi bi-cart-dash fs-2"></i>
-                    <span class="swfText">ONLINE SHOP</span>
-                    <div>公式オンラインショップ</div>
-                </div>
-            </a>
+        <a href="" target="_blank">
+            <div class="swfshop">
+                <i class="bi bi-cart-dash fs-2"></i>
+                <span class="swfText">ONLINE SHOP</span>
+                <div>公式オンラインショップ</div>
+            </div>
+        </a>       
     </div>
     
     <section class="mt-5 top001">
@@ -104,148 +112,154 @@
             </div>
         </div>
     </section>
-
-    <section class=" mt-5 top002">
-        <video class="bg-video" autoplay loop muted playsinline>
-            <source src="../img/background2.mp4" type="video/mp4">
-        </video>
-        <div class="container">
-            <h2 class="section-title mb-4">天珠</h2>
     
-            <div class="row g-5">
-                <div class="col-md-4">
-                    <div class="card-effect">
-                        <img src="https://placehold.jp/300x164.png">
-                        <h5 class="mb-0 mt-4">天珠</h5>
-                        <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, hic!</p>
-                        <p class="top002Go">MORE</p>
-                    </div>
-                </div>
+    <div class="common mt-5">
+        <video class="bg-video" autoplay loop muted playsinline>
+            <source src="../img/background.mp4" type="video/mp4">
+        </video>
 
-                <div class="col-md-4">
-                    <div class="card-effect">
-                        <img src="https://placehold.jp/300x164.png">
-                        <h5 class="mb-0 mt-4">天珠のブレスレット</h5>
-                        <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, hic!</p>
-                        <p class="top002Go">MORE</p>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card-effect">
-                        <img src="https://placehold.jp/300x164.png">
-                        <h5 class="mb-0 mt-4">天珠のお守り</h5>
-                        <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, hic!</p>
-                        <p class="top002Go">MORE</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="mt-5 top003">
-        <div class="container">
-            <h2 class="section-title mb-3">ランキング</h2>
-            <div id="carousel-ranking" class="carousel slide">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="row">
-                            <div class="col-3">
-                                <span class="ranking">人気 No1</span>
-                                <div class="card">
-                                    <img src="https://placehold.jp/167x167.png" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="product-name">商品名</h5>
-                                        <p class="price">¥1,500(税込)</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <span class="ranking">人気 No2</span>
-                                <div class="card">
-                                    <img src="https://placehold.jp/167x167.png" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="product-name">商品名</h5>
-                                        <p class="price">¥1,500(税込)</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <span class="ranking">人気 No3</span>
-                                <div class="card">
-                                    <img src="https://placehold.jp/167x167.png" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="product-name">商品名</h5>
-                                        <p class="price">¥1,500(税込)</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="card key">
-                                    <img src="https://placehold.jp/167x167.png" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="product-name">商品名</h5>
-                                        <p class="price">¥1,500(税込)</p>
-                                    </div>
-                                </div>
-                            </div>  
+        <section class="top002">
+            <div class="container">
+                <h2 class="section-title mb-4">天珠</h2>
+        
+                <div class="row g-5">
+                    <div class="col-md-4">
+                        <div class="card-effect">
+                            <img src="https://placehold.jp/300x164.png">
+                            <h5 class="mb-0 mt-4">天珠</h5>
+                            <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, hic!</p>
+                            <p class="top002Go">MORE</p>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-3">
-                                <div class="card key">
-                                    <img src="https://placehold.jp/167x167.png" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="product-name">商品名</h5>
-                                        <p class="price">¥1,500(税込)</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="card key">
-                                    <img src="https://placehold.jp/167x167.png" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="product-name">商品名</h5>
-                                        <p class="price">¥1,500(税込)</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="card key">
-                                    <img src="https://placehold.jp/167x167.png" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="product-name">商品名</h5>
-                                        <p class="price">¥1,500(税込)</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="card key">
-                                    <img src="https://placehold.jp/167x167.png" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="product-name">商品名</h5>
-                                        <p class="price">¥1,500(税込)</p>
-                                    </div>
-                                </div>
-                            </div>  
+    
+                    <div class="col-md-4">
+                        <div class="card-effect">
+                            <img src="https://placehold.jp/300x164.png">
+                            <h5 class="mb-0 mt-4">天珠のブレスレット</h5>
+                            <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, hic!</p>
+                            <p class="top002Go">MORE</p>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-4">
+                        <div class="card-effect">
+                            <img src="https://placehold.jp/300x164.png">
+                            <h5 class="mb-0 mt-4">天珠のお守り</h5>
+                            <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, hic!</p>
+                            <p class="top002Go">MORE</p>
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-next" type="button" data-bs-target="#carousel-ranking" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                </button>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <section class="mt-5 top003">
+            <div class="container">
+                <h2 class="section-title mb-3">RANKING</h2>
+                <div id="carousel-ranking" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-3">
+                                    <span class="ranking">人気 No1</span>
+                                    <div class="card">
+                                        <img src="https://placehold.jp/167x167.png" class="card-img-top">
+                                        <div class="card-body">
+                                            <h5 class="product-name">商品名</h5>
+                                            <p class="price">¥1,500(税込)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <span class="ranking">人気 No2</span>
+                                    <div class="card">
+                                        <img src="https://placehold.jp/167x167.png" class="card-img-top">
+                                        <div class="card-body">
+                                            <h5 class="product-name">商品名</h5>
+                                            <p class="price">¥1,500(税込)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <span class="ranking">人気 No3</span>
+                                    <div class="card">
+                                        <img src="https://placehold.jp/167x167.png" class="card-img-top">
+                                        <div class="card-body">
+                                            <h5 class="product-name">商品名</h5>
+                                            <p class="price">¥1,500(税込)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="card key">
+                                        <img src="https://placehold.jp/167x167.png" class="card-img-top">
+                                        <div class="card-body">
+                                            <h5 class="product-name">商品名</h5>
+                                            <p class="price">¥1,500(税込)</p>
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="card key">
+                                        <img src="https://placehold.jp/167x167.png" class="card-img-top">
+                                        <div class="card-body">
+                                            <h5 class="product-name">商品名</h5>
+                                            <p class="price">¥1,500(税込)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="card key">
+                                        <img src="https://placehold.jp/167x167.png" class="card-img-top">
+                                        <div class="card-body">
+                                            <h5 class="product-name">商品名</h5>
+                                            <p class="price">¥1,500(税込)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="card key">
+                                        <img src="https://placehold.jp/167x167.png" class="card-img-top">
+                                        <div class="card-body">
+                                            <h5 class="product-name">商品名</h5>
+                                            <p class="price">¥1,500(税込)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="card key">
+                                        <img src="https://placehold.jp/167x167.png" class="card-img-top">
+                                        <div class="card-body">
+                                            <h5 class="product-name">商品名</h5>
+                                            <p class="price">¥1,500(税込)</p>
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel-ranking" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
 
     <div class="mt-5 fortune-telling">
         <a href="https://yuimizu.github.io/random/index.html" target="_blank">天珠占い</a>
     </div>
 
     <section class="mt-5 top004">
+        <video class="bg-video" autoplay loop muted playsinline>
+            <source src="../img/background.mp4" type="video/mp4">
+        </video>
         <div class="container">
-            <h2 class="section-title mb-3">ギャラリー</h2>
+            <h2 class="section-title mb-3">GALLERY</h2>
             <div id="Carousel" class="carousel slide mt-5">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -389,11 +403,11 @@
         </a>
     </section>
 
-    <footer class="mt-3">
+    <footer class="pb-3">
         <div class="container">
             <div class="d-flex justify-content-between">
                 <div class="footerLogo">
-                    <a href="">
+                    <a href="home.html">
                         <img src="../img/logo.jpg">
                     </a>
                 </div>
@@ -414,9 +428,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="footerBtm mt-4">
-            <div class="copy">©The Power Spot</div>
         </div>
     </footer>
 
