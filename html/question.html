@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/common.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="home.html">
+                <img src="../img/logo.jpg">
+            </a>
+        </div>
+        <nav class="navbar navbar-expand-md" id="mainNav">
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mx-auto"> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="tenju.html">天珠について</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">眼人とは</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">お知らせ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">天珠の購入</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="question.html">よくある質問</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">お問い合わせ</a>
+                    </li>
+                </ul>
+                <div class="sns-link mt-2">
+                    <span>SNS</span>
+                    <a href="#">
+                        <img src="../img/Instagram.png" class="sns-icon">
+                    </a>
+                    <a href="#">
+                        <img src="../img/x.png" class="sns-icon">
+                    </a>
+                    <a href="#">
+                        <img src="../img/LINE.png" class="sns-icon">
+                    </a>
+                    <a href="#">
+                        <img src="../img/mercari.png" class="sns-icon">
+                    </a>
+                </div>
+            </div>  
+        </nav>
+    </header>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var navbar = document.getElementById("mainNav");
+            var body = document.body;
+            var scrollThreshold = 50; // スクロール量の基準
+        
+            window.addEventListener("scroll", function () {
+                if (window.scrollY > scrollThreshold) {
+                    navbar.classList.add("fixed");
+                    body.classList.add("fixed-nav-padding");
+                } else {
+                    navbar.classList.remove("fixed");
+                    body.classList.remove("fixed-nav-padding");
+                }
+            });
+        });
+    </script>
+
+    <div class="container">
+        <div class="accordion mt-5 mb-4" id="accordionQuestion">
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+                        <strong class="name">チベット天珠とは何ですか？</strong>
+                    </button>
+                </div>
+                <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#accordionQuestion">
+                    <div class="accordion-body">
+                        <p class="text">チベット天珠とは、古代からチベットを中心にヒマラヤ地域で神聖視されてきたビーズ状の石です。天然石に特殊な加工を施し、吉祥文様と呼ばれる縁起の良い模様が描かれています。</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+                        <strong class="name">天珠の歴史と起源は？天珠はいつ頃から存在しますか？</strong>
+                    </button>
+                </div>
+                <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionQuestion">
+                    <div class="accordion-body">
+                        <p class="text">天珠の起源については、まだ解明されていない部分が多く、謎につつまれています。そのため、天珠には様々な伝説や言い伝えが存在します。天珠は、今から2000年～3000年前の古代インド、もしくは西アジアのメソポタミア文明が起源であり、そこからチベット周辺へ運ばれて来たという説もあります。</p>
+                    </div>
+                </div>
+            </div>
+      
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+                        <strong class="name">天珠に関する伝説や言い伝えはありますか？</strong>
+                    </button>
+                </div>
+                <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionQuestion">
+                    <div class="accordion-body">
+                        <p class="text">チベット天珠の伝説については、天珠は神々が地上に降りてきた際に落とした「神の眼」であるという伝説、龍が空を飛ぶ際に落とした鱗が変化したものであるという伝説、天珠は特殊な虫の化石であるという説など、様々な伝説や言い伝えがあります。</p>
+                    </div>
+                </div>
+            </div>
+      
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
+                        <strong class="name">天珠はどのような素材でできていますか？</strong>
+                    </button>
+                </div>
+                <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionQuestion">
+                    <div class="accordion-body">
+                        <p class="text">天珠は、主に瑪瑙（めのう）という鉱物を素材として作られています。瑪瑙以外の素材として合成樹脂、ガラス、また水晶など天然石に模様を彫刻した天珠も存在しています。</p>
+                    </div>
+                </div>
+            </div>
+      
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5">
+                        <strong class="name">天珠の製法は？天珠はどのようにして作られるのですか？</strong>
+                    </button>
+                </div>
+                <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#accordionQuestion">
+                    <div class="accordion-body">
+                        <p class="text">天珠の製法は、各工房が長年培ってきた技術の結晶であり、企業秘密として扱われていることが多く、その詳細な製法は外部に公開されることはほとんどありません。
+                            しかし、一般的な天珠の製法は、以下の様な工程を経ると考えられています。
+                            1.材料の選定：天珠となる最適なを厳選します。
+                            2.原石の加工：厳選された瑪瑙の原石は、まず天珠の形状に切断され、研磨によって表面が滑らかにされ、穴あけによって紐を通すための穴が開けられます。
+                            3.模様付け：天珠の模様は、染色や腐食といった技法を用いて描かれます。染色の場合は、特殊な染料を用いて天珠の表面に模様を描き、高温で焼き付けることで染料を定着させます。腐食の場合は、薬品を使って天珠の表面を腐食させ、模様を浮かび上がらせます。模様の種類や技法は、工房によって異なり、それぞれ独自のノウハウが用いられています。
+                            4.仕上げ：模様付けが終わった天珠は、再度研磨によって表面が滑らかにされ、光沢が出されます。また、天珠の表面を保護するために、コーティングを施すこともあります。
+                            ★ジャパンストーングループの代表が、天珠工房に招待され、日本人で初めて至純天珠を作った貴重な写真はこちら→<br>
+                            ※これから先の写真や文章は、代表の持論や意見を掲載しておりますので、物事に対して批判的な同業者及び読者の方は、これから先の閲覧をお控えください。
+                        </p>
+                    </div>
+                </div>
+            </div>
+      
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6">
+                        <strong class="name">自分に合った天珠の選び方は？</strong>
+                    </button>
+                </div>
+                <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#accordionQuestion">
+                    <div class="accordion-body">
+                        <p class="text">
+                            1.見た目が気に入った天珠を選ぶ。
+                            2.天珠の模様の意味を参考にあなたの願いや目標に合った模様を選ぶ。
+                            3.天珠占いを参考にする。
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7">
+                        <strong class="name">天珠の選び方で重要なポイントは？</strong>
+                    </button>
+                </div>
+                <div id="collapse7" class="accordion-collapse collapse" data-bs-parent="#accordionQuestion">
+                    <div class="accordion-body">
+                        <p class="text">
+                            他人の意見は参考程度にとどめ、自分の直感を信じて選ぶことが大切です。
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8">
+                        <strong class="name">天珠の価格相場はどのくらいですか？</strong>
+                    </button>
+                </div>
+                <div id="collapse8" class="accordion-collapse collapse" data-bs-parent="#accordionQuestion">
+                    <div class="accordion-body">
+                        <p class="text">
+                            天珠の価格相場は、数百円から数千万円まで、幅広い価格帯が存在します。
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9">
+                        <strong class="name">天珠の価格はどのように決まりますか？</strong>
+                    </button>
+                </div>
+                <div id="collapse9" class="accordion-collapse collapse" data-bs-parent="#accordionQuestion">
+                    <div class="accordion-body">
+                        <p class="text">
+                            価格を左右する主な要因<br>
+                            素材：瑪瑙（めのう）の種類や品質<br>
+                            模様：模様の希少性や複雑さ、意味合いによって価格が変わります。特に、九眼天珠や龍眼天珠など、人気のある模様は高価になる傾向があります。
+                            状態：傷や欠けがなく、天珠における「焼きムラがない」状態、天珠の表面が均一に焼成され、意図しない色の濃淡や模様の乱れがない、状態が良い天珠ほど高価です。
+                            希少性：柄や風合いが希少な天珠は、コレクターの間で高値で取引されることがあります。
+                            年代：古い天珠は、現代のものよりも流通量が少ない為、高額で取引されます。
+                        </p>
+                        <p class="text">
+                            価格相場の注意点<br>
+                            ⚪同じ品質や種類の天珠でも、販売店の立地（家賃）や人件費、入手経路などによって価格が異なることがあります。しかし、ネット販売だからと必ずしも安いとは限りません。
+                            ⚪粗悪品に注意：天珠の人気が高まるにつれて、模造品（コーチングが薄く色が剥げるプラスチック製、合成製）も多く出回っています。
+                            ⚪天珠は海外で購入された方が高くなる傾向があります。できるだけ海外のお土産屋さんは避け、国内の信頼できる販売店で購入することをお勧めします。
+                            ⚪高価格な年代を偽装した天珠も昔から販売されています。
+                            ★天珠の価格相場は複雑で、一概に「いくらくらい」とは言えません。上記を参考に、ご自身の予算や目的に合った天珠を探すと良いでしょう。
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10">
+                        <strong class="name">天珠のニセ物とホン物ってありますか？</strong>
+                    </button>
+                </div>
+                <div id="collapse10" class="accordion-collapse collapse" data-bs-parent="#accordionQuestion">
+                    <div class="accordion-body">
+                        <p class="text">
+                            天珠の「本物」と「偽物」の定義は、各販売者によって異なる場合があります。これは、天珠の鑑定基準が確立されていないことや、販売者の立場や考え方によって解釈が異なることが原因です。
+                        </p>
+                        <div class="accordion" id="nestedAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading1">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse1" aria-expanded="true" aria-controls="nestedCollapse1">
+                                        ★もう少し代表の解釈を知りたい方はこちら・・・
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse1" class="accordion-collapse collapse" aria-labelledby="nestedHeading1" data-bs-parent="#nestedAccordion">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            ※※これから先の文章は、代表の持論や意見を掲載しておりますので、物事に対して批判的な同業者及び読者の方は、これから先の閲覧をお控えください。
+
+                                            販売店ごとの立場の違いと定義の例<br><br>
+
+                                            <span class="fw-bold">アンティークビーズや老天珠を専門に取り扱うA氏</span><br>
+
+                                            本物：1000年以上前に作られたとされる古代の天珠（老天珠）<br>
+                                            傷物：近代、現代に作られた、老天珠以外のすべての天珠（現代天珠）<br><br>
+
+                                            <span class="fw-bold">比較的に高価格帯の現代天珠を中心に取り扱うB氏</span><br>
+
+                                            本物：天然の瑪瑙（めのう）を使用した、台湾、中国で作られた特定のブランド天珠<br>
+                                            傷物：特定のブランド以外の天珠<br><br>
+
+                                            <span class="fw-bold"> 一般的な現代天珠を中心に取り扱うC氏</span><br>
+
+                                            本物：天然の瑪瑙（めのう）を使用し、特殊な腐食加工を施して焼き上げた天珠<br>
+                                            偽物：瑪瑙以外の素材（ガラス、脂、プラスチック）を使用し、手描きやプリントで模様を描いた天珠<br><br>
+
+                                            <span class="fw-bold">パワーストーンを中心に天珠も扱うD氏</span><br>
+
+                                            本物：姿形、図柄が天珠であれば、例え天然石にレーザー彫刻されたものでも、素材、年代、関係なく天珠は天珠<br>
+                                            偽物：簡単に色や模様が剥げたり、直ぐに割れたりする粗悪品の天珠<br><br>
+
+                                            <span class="fw-bold">スピリチュアルや霊感的なパワーを専門に天珠を扱うE氏</span><br>
+
+                                            本物：チベットの高僧、霊能力者、販売者等のレイキや特別な儀式を行い、パワーが込められた天珠、チベットのお寺から分けてもらった天珠、加持祈祷、占い、お焚き上げ、護摩供養・・・<br>
+                                            偽物：特別な儀式も行われず、何のパワーも込められていない天珠は、持っていても何の意味もない<br><br>
+
+                                            以上は、私が長年天珠に携わって出会ってきた同業者達です。皆さん、独自の理論を持ち、自信をもってお客さんに持論を述べて説明、販売をしています。天珠の「本物」「偽物」の定義は、このように人によって大きく異なる場合があります。それは、天珠の歴史や価値観、取り扱う種類、そしてそれぞれの立場によって、重要視するポイントが異なるためです。
+                                            では、私の意見として、どの人の定義が正しいかと言えば、これはすべて正しいです。皆さん天珠（ジービーズ）に向き合って真面目に販売されていて、それぞれの立場から天珠を見つめ、お客さんに最適な天珠を提供しようとしています。
+
+                                            <span class="fw-bold">それぞれの定義が「正しい」と思える理由</span><br>
+
+                                            歴史的価値を重視する業者：古い天珠や希少な天珠を重視し、歴史的背景や文化的な価値を伝えます。
+
+                                            製法を重視する業者：古代からの伝統的な製法で作られた天珠を重視し、手作りの風合いを大切にします。
+
+                                            素材を重視する業者：瑪瑙の種類や品質にこだわり、天然の素材であることを重視します。
+
+                                            エネルギーを重視する業者：天珠に込められたエネルギーやパワー、霊感や直感を重視します。
+
+                                            <span class="fw-bold">※購入者が注意すべきこと</span><br>
+                                            天珠を購入を検討されている方は、それぞれの業者の説明を鵜呑みにせず、複数の情報を比較検討することが大切です。
+                                            また、販売者に質問する際は、「この天珠は本物ですか？物ですか？」といったストレートな質問はなるべく控えて、もう少し具体的な質問をした方が良いです。
+                                            例えば「この天珠は古代の天珠ですか？それとも現代に作られた天珠ですか？」や「素材はなんですか？なんの石ですか？」といった質問の方が業者さんも気持ちよく答えやすいと思います。
+                                            自分の価値観を明確にする：天珠に何を求めるのか、何を重視するのかを明確にしましょう。
+                                            販売店の説明をよく聞く：天珠の素材、製法、年代、産地など、詳しく説明してもらい、話の中で不備な箇所がないかを見極めましょう。
+                                            複数の販売店を比較する：同じ種類の天珠でも、価格が高額であったり、説明が異なることがあります。複数の販売店を比較検討することをおすすめします。
+                                            信頼できる販売店を選ぶ：実績や評判の良い販売店を選びましょう。
+                                            直感を信じる：最終的には、自分の直感を信じて選ぶことが大切です。
+
+                                            天珠は、高価なものです。後悔しないように、しっかりと情報収集を行い、納得のいく天珠を選びましょう。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse11">
+                        <strong class="name">天珠のパワーとは何ですか？</strong>
+                    </button>
+                </div>
+                <div id="collapse11" class="accordion-collapse collapse" data-bs-parent="#accordionQuestion">
+                    <div class="accordion-body">
+                        <p class="text">
+                            天珠のパワーは、図柄、石、形といった三つの要素から生まれると考えられます。
+                            図柄の力・・・多くの人が絵画や壁画から何らかのエネルギーや感情を受け取った経験があるのではないでしょうか。古代の人々にとって、絵画や壁画は、宗教的・儀礼的な意味を持ち、呪術的な力を持つと考えられていました。
+                            石の力・・・瑪瑙（めのう）は、古くから魔除けや癒しの力を持つと信じられてきました。
+                            形の力・・・楕円形は、その形状から特有の波動を生み出すと考えられています。この波動は、心身の状態を整える効果があるとされています。
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse12">
+                        <strong class="name">天珠の身につけ方に決まりはありますか？</strong>
+                    </button>
+                </div>
+                <div id="collapse12" class="accordion-collapse collapse" data-bs-parent="#accordionQuestion">
+                    <div class="accordion-body">
+                        <p class="text">
+                            天珠の身につけ方に厳格な決まりはありません。ご自身の直感や気持ち、天珠の種類、目的に合わせて、自由に身につけてください。
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse13">
+                        <strong class="name">天珠のパワーを最大限に引き出す方法は？</strong>
+                    </button>
+                </div>
+                <div id="collapse13" class="accordion-collapse collapse" data-bs-parent="#accordionTenju">
+                    <div class="accordion-body">
+                        <p class="text">
+                            天珠のパワーを最大限に引き出すためには、感謝・肯定・信頼の気持ちを持つことが重要です。天珠への感謝はより強いエネルギーを引き寄せ、肯定的な思考は天珠の力を最大限に引き出すと考えられています。また、天珠の力を信じることで、良い作用が働くでしょう。
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse14">
+                        <strong class="name">天珠はどのような魅力を持っていますか？</strong>
+                    </button>
+                </div>
+                <div id="collapse14" class="accordion-collapse collapse" data-bs-parent="#accordionTenju">
+                    <div class="accordion-body">
+                        <p class="text">
+                            天珠は、神秘的な力、歴史的背景、美しいデザイン、スピリチュアルな意味合いなど、様々な魅力を持つパワーストーンです。
+                            現代社会においても、多くの人々にとって、天珠は特別な存在として愛されています。
+                            天珠の魅力は、一言では語り尽くせないほど奥深いものです。ぜひ、実際に天珠に触れて、その魅力を体感してみてください。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function formatTextForHTML(text) {
+            return text.replace(/。(?!$)/g, "。<br><br>");
+        }
+    
+        window.onload = function() {
+            let textElements = document.querySelectorAll(".text");
+            textElements.forEach(function(element) {
+                element.innerHTML = formatTextForHTML(element.innerHTML);
+            });
+        };
+    </script>
+    
+    <footer class="pb-3">
+        <div class="container">
+            <div class="footerSns">
+                <a href="#">
+                    <img src="../img/Instagram.png" class="sns-icon">
+                </a>
+                <a href="#">
+                    <img src="../img/x.png" class="sns-icon">
+                </a>
+                <a href="#">
+                    <img src="../img/LINE.png" class="sns-icon">
+                </a>
+                <a href="#">
+                    <img src="../img/mercari.png" class="sns-icon">
+                </a>
+            </div>
+        </div>  
+        <div class="logo">
+            <a href="home.html">
+                <img src="../img/logo.jpg">
+            </a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

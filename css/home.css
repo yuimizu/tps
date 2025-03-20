@@ -3,34 +3,50 @@ body {
     font-size: 14px;
 }
 
+img {
+    width: 100%;
+}
+
 a {
     text-decoration: none;
     color: #000;
 }
 
 .navbar {
-    position: fixed;
+    transition: all 0.3s ease-in-out;
     width: 100%;
     z-index: 1050;
     background-color: #fff; 
 }
 
-.navbar-brand img {
-    width: 200px;
+.navbar.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+body.fixed-nav-padding {
+    padding-top: 70px; 
+}
+
+.logo {
+    text-align: center;
+    background-color: #333;   
+}
+
+.logo img {
+    width: 250px;
+    padding-top: 10px;
 }
 
 #navbarNavDropdown {
     flex-direction: column;
 }
 
-.sns-link span {
-    margin-right: 5px; 
-    vertical-align: middle;  
-}
-
 .sns-icon {
     width: 30px;
-    margin-right: 10px;
+    margin: 0 5px;
 }
 
 .swf {
@@ -61,6 +77,8 @@ a {
 @media (max-width: 767px){
     .navbar {
         background-color: transparent;
+        position: fixed;
+        top: 0;
     }
 
     #navbarNavDropdown {
@@ -127,6 +145,10 @@ a {
 .section-title {
     color: #f7f7f7;
     font-size: 50px;
+}
+
+.top002 img {
+    height: 267px;
 }
 
 .card-effect {
@@ -197,11 +219,6 @@ a {
 
 footer {
     background-color: #f7f7f7;
-    padding-top: 30px;
-}
-
-.footerLogo img {
-    width: 230px;
 }
 
 .footerSns {

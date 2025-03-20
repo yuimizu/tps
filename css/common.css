@@ -1,47 +1,3 @@
-body {
-    margin: 0px;
-    font-size: 14px;
-}
-
-a {
-    text-decoration: none;
-    color: #000;
-}
-
-.navbar {
-    background-color: #fff; 
-}
-
-.navbar-brand img {
-    width: 200px;
-}
-
-#navbarNavDropdown {
-    flex-direction: column;
-}
-
-.sns-link span {
-    margin-right: 5px; 
-    vertical-align: middle;  
-}
-
-.sns-icon {
-    width: 30px;
-    margin-right: 10px;
-}
-
-@media (max-width: 767px){
-    .navbar {
-        background-color: transparent;
-    }
-
-    #navbarNavDropdown {
-        background-color: rgba(255, 255, 255, 0.5);
-        padding-left: 20px;
-        padding-bottom: 20px;
-    }
-}
-
 #accordionTenju {
     max-width: 990px;
     margin: 0 auto;
@@ -71,19 +27,4 @@ a {
         margin: 0;
     }
     
-}
-
-
-footer {
-    background-color: #f7f7f7;
-    padding-top: 30px;
-}
-
-.footerLogo img {
-    width: 230px;
-}
-
-.footerSns {
-    text-align: end;
-    font-size: 40px;
 }

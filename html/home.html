@@ -10,17 +10,19 @@
     <link rel="stylesheet" href="../css/home.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-md">
-        <div class="container">
-            <a class="navbar-brand" href="home.html">
+    <header>
+        <div class="logo">
+            <a href="home.html">
                 <img src="../img/logo.jpg">
             </a>
-            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        </div>
+        <nav class="navbar navbar-expand-md" id="mainNav">
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
-            <div class="collapse navbar-collapse"  id="navbarNavDropdown">
-                <ul class="navbar-nav ms-auto"> 
+    
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mx-auto"> 
                     <li class="nav-item">
                         <a class="nav-link" href="tenju.html">天珠について</a>
                     </li>
@@ -34,14 +36,13 @@
                         <a class="nav-link" href="">天珠の購入</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">よくある質問</a>
+                        <a class="nav-link" href="question.html">よくある質問</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="">お問い合わせ</a>
                     </li>
                 </ul>
-
-                <div class="sns-link ms-auto">
+                <div class="sns-link mt-2">
                     <span>SNS</span>
                     <a href="#">
                         <img src="../img/Instagram.png" class="sns-icon">
@@ -57,14 +58,33 @@
                     </a>
                 </div>
             </div>  
-        </div>   
-    </nav>
+        </nav>
+    </header>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var navbar = document.getElementById("mainNav");
+            var body = document.body;
+            var scrollThreshold = 50; // スクロール量の基準
+        
+            window.addEventListener("scroll", function () {
+                if (window.scrollY > scrollThreshold) {
+                    navbar.classList.add("fixed");
+                    body.classList.add("fixed-nav-padding");
+                } else {
+                    navbar.classList.remove("fixed");
+                    body.classList.remove("fixed-nav-padding");
+                }
+            });
+        });
+    </script>
     
     <div class="swf">
         <div id="carouselIndicators" class="carousel slide">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -75,6 +95,11 @@
               <div class="carousel-item">
                 <video class="video-background d-block w-100" autoplay loop muted playsinline>
                     <source src="../img/swfVideo2.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="carousel-item">
+                <video class="video-background d-block w-100" autoplay loop muted playsinline>
+                    <source src="../img/swfVideo3.mp4" type="video/mp4">
                 </video>
               </div>
             </div>
@@ -125,7 +150,7 @@
                 <div class="row g-5">
                     <div class="col-md-4">
                         <div class="card-effect">
-                            <img src="https://placehold.jp/300x164.png">
+                            <img src="../img/tenju.jpg">
                             <h5 class="mb-0 mt-4">天珠</h5>
                             <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, hic!</p>
                             <p class="top002Go">MORE</p>
@@ -134,7 +159,7 @@
     
                     <div class="col-md-4">
                         <div class="card-effect">
-                            <img src="https://placehold.jp/300x164.png">
+                            <img src="../img/bracelet.jpg">
                             <h5 class="mb-0 mt-4">天珠のブレスレット</h5>
                             <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, hic!</p>
                             <p class="top002Go">MORE</p>
@@ -143,7 +168,7 @@
     
                     <div class="col-md-4">
                         <div class="card-effect">
-                            <img src="https://placehold.jp/300x164.png">
+                            <img src="../img/omamori.jpg">
                             <h5 class="mb-0 mt-4">天珠のお守り</h5>
                             <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, hic!</p>
                             <p class="top002Go">MORE</p>
@@ -405,29 +430,25 @@
 
     <footer class="pb-3">
         <div class="container">
-            <div class="d-flex justify-content-between">
-                <div class="footerLogo">
-                    <a href="home.html">
-                        <img src="../img/logo.jpg">
-                    </a>
-                </div>
-                <div class="footerSnsBox">
-                    <div class="footerSns">
-                        <a href="#">
-                            <img src="../img/Instagram.png" class="sns-icon">
-                        </a>
-                        <a href="#">
-                            <img src="../img/x.png" class="sns-icon">
-                        </a>
-                        <a href="#">
-                            <img src="../img/LINE.png" class="sns-icon">
-                        </a>
-                        <a href="#">
-                            <img src="../img/mercari.png" class="sns-icon">
-                        </a>
-                    </div>
-                </div>
+            <div class="footerSns">
+                <a href="#">
+                    <img src="../img/Instagram.png" class="sns-icon">
+                </a>
+                <a href="#">
+                    <img src="../img/x.png" class="sns-icon">
+                </a>
+                <a href="#">
+                    <img src="../img/LINE.png" class="sns-icon">
+                </a>
+                <a href="#">
+                    <img src="../img/mercari.png" class="sns-icon">
+                </a>
             </div>
+        </div>  
+        <div class="logo">
+            <a href="home.html">
+                <img src="../img/logo.jpg">
+            </a>
         </div>
     </footer>
 
