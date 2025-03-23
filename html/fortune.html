@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>占い</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="stylesheet" href="../css/fortune.css">
+</head>
+<body>
+  <video class="video-background" autoplay loop muted playsinline>
+    <source src="../img/background.mp4" type="video/mp4">
+  </video> 
+
+  <nav class="navbar">
+    <div class="container-fluid">
+        <button class="navbar-toggler border-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <i class="bi bi-list"></i>
+        </button>
+
+      <div class="offcanvas offcanvas-end" id="offcanvasNavbar" tabindex="-1">
+        <div class="offcanvas-header">
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="閉じる"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a href="tenju.html" class="nav-link">1.天珠について</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">2.天珠の購入</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">3.お知らせ</a>
+            </li>
+            <li class="nav-item">
+              <a href="ganjin.html" class="nav-link">4.眼人について</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">
+                  <img src="../img/Instagram.png" class="sns-icon">
+              </a>
+              <a href="#">
+                <img src="../img/x.png" class="sns-icon">
+              </a>
+              <a href="#">
+                <img src="../img/LINE.png" class="sns-icon">
+              </a>
+              <a href="#">
+                <img src="../img/mercari.png" class="sns-icon">
+              </a>   
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="container mt-3">
+    <div class="fadeIn500ms">
+      <h1 class="mb-2">天珠占い</h1>
+      <h1 class="mb-4 en">Fortune Telling</h1>
+      <p>今あなたが必要とする天珠を<br>導き出す特別な占いです。</p>
+    </div>
+
+    <div class="fadeIn1500ms">
+      <p>あなたについて教えてください。</p>
+
+      <!-- お名前入力フィールド -->
+      <p>お名前を入力してください。</p>
+      <input type="text" id="nameInput" class="form-control mb-3" placeholder="お名前">
+
+      <!-- 生年月日選択フィールド -->
+      <p>生年月日を選択してください。</p>
+
+      <div class="d-flex gap-2 mb-3">
+        <!-- 年の選択 -->
+        <select id="yearSelect" class="form-select">
+          <option value="">年</option>
+        </select>
+        <!-- 月の選択 -->
+        <select id="monthSelect" class="form-select">
+          <option value="">月</option>
+        </select>
+        <!-- 日の選択 -->
+        <select id="daySelect" class="form-select">
+          <option value="">日</option>
+        </select>
+      </div>
+    </div>
+    
+    <button class="button fadeIn2500ms en" onclick="goToResultPage()">START</button>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const nameInput = document.getElementById("nameInput");
+      const yearSelect = document.getElementById("yearSelect");
+      const monthSelect = document.getElementById("monthSelect");
+      const daySelect = document.getElementById("daySelect");
+
+      // 年を生成 (1940年～現在の年)
+      const currentYear = new Date().getFullYear();
+      for (let year = 1940; year <= currentYear; year++) {
+        const option = document.createElement("option");
+        option.value = year;
+        option.textContent = year;
+        yearSelect.appendChild(option);
+      }
+
+      // 月を固定で生成 (1～12)
+      for (let month = 1; month <= 12; month++) {
+        const option = document.createElement("option");
+        option.value = month;
+        option.textContent = month;
+        monthSelect.appendChild(option);
+      }
+
+      // 日を固定で生成 (1～31)
+      for (let day = 1; day <= 31; day++) {
+        const option = document.createElement("option");
+        option.value = day;
+        option.textContent = day;
+        daySelect.appendChild(option);
+      }
+    });
+
+    function goToResultPage() {
+      const nameInput = document.getElementById("nameInput").value.trim();
+      const year = document.getElementById("yearSelect").value;
+      const month = document.getElementById("monthSelect").value;
+      const day = document.getElementById("daySelect").value;
+
+      if (!nameInput) {
+        alert("お名前を入力してください！");
+        return;
+      }
+
+      if (!year || !month || !day) {
+        alert("生年月日を正しく選択してください！");
+        return;
+      }
+
+      const birthdate = `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+
+      // `encodeURIComponent()` でURLエンコードして渡す
+      window.location.href = `result.html?name=${encodeURIComponent(nameInput)}&birthdate=${encodeURIComponent(birthdate)}`;
+    } 
+  </script>
+
+</body>
+</html>

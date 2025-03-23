@@ -40,6 +40,10 @@ body.fixed-nav-padding {
     padding-top: 10px;
 }
 
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
 #navbarNavDropdown {
     flex-direction: column;
 }
@@ -88,7 +92,7 @@ body.fixed-nav-padding {
     }
 
     .swf {
-        height: 100%;
+        height: 500px
     }
 
     .swf video {

@@ -1,0 +1,2521 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/common.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="home.html">
+                <img src="../img/logo.jpg">
+            </a>
+        </div>
+        <nav class="navbar navbar-expand-md" id="mainNav">
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">ホーム</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="tenju.html">天珠について</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ganjin.html">眼人とは</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">お知らせ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">天珠の購入</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="question.html">よくある質問</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">お問い合わせ</a>
+                    </li>
+                </ul>
+                <div class="sns-link mt-2">
+                    <span>SNS</span>
+                    <a href="#">
+                        <img src="../img/Instagram.png" class="sns-icon">
+                    </a>
+                    <a href="#">
+                        <img src="../img/x.png" class="sns-icon">
+                    </a>
+                    <a href="#">
+                        <img src="../img/LINE.png" class="sns-icon">
+                    </a>
+                    <a href="#">
+                        <img src="../img/mercari.png" class="sns-icon">
+                    </a>
+                </div>
+            </div>  
+        </nav>
+    </header>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var navbar = document.getElementById("mainNav");
+            var body = document.body;
+            var scrollThreshold = 50; // スクロール量の基準
+        
+            window.addEventListener("scroll", function () {
+                if (window.scrollY > scrollThreshold) {
+                    navbar.classList.add("fixed");
+                    body.classList.add("fixed-nav-padding");
+                } else {
+                    navbar.classList.remove("fixed");
+                    body.classList.remove("fixed-nav-padding");
+                }
+            });
+        });
+    </script>
+
+    <div class="container">
+        <div class="summary mt-2">
+            <div class="title">■眼人とは</div>
+            <p>眼人（がんじん）とは、天珠に描かれた聖眼の模様を指し、天珠占いにおいて重要な要素です。<br>「天珠占い」では、一眼人から十二眼人までの12種類で分類され、各眼人には、特有の性格や象徴的な意味があります。
+        </div>
+        <div class="accordion mt-5 mb-4" id="accordionGanjin">
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+                        <strong class="name">一眼人</strong>
+                        <p class="subtitle">- 唯一無二の存在、自由を愛する一眼人 -</p>
+                    </button>
+                </div>
+                <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#accordionGanjin">
+                    <div class="accordion-body">
+                        <div class="caption">
+                            自由と誠実さを持つ存在
+                        </div>
+                        <p class="text">
+                            一眼人は、仏教の大日如来や神道における唯一神、陰陽五行の「一」が示す力強さと自由を象徴しています。
+                            絶対的な存在感を持ち、他者と同じではない、まさに無比の個性を持つ人物です。自分の道を一貫して進み、周囲に流されることなく、自分の価値観に忠実に行動します。
+                        </p>
+                        <p class="text">
+                            「一」は始まりであり、太陽のように強い存在感を放ち、周囲を導くことが多いです。その独自性と自由な発想は、既存の常識や枠にとらわれず、斬新なアイデアや行動で周囲を驚かせます。これは、一眼人が持つ「絶対的な自由」の象徴ともいえるでしょう。
+                        </p>
+                        <p class="text">
+                            一眼人は、成功や勝利に対しても非常に直感的かつ前向きです。他者に依存することなく、自らの力で目標を達成し、勝利を手にします。周囲から「型破り」と見られることもありますが、その独特な発想こそが一眼人の強さであり、宇宙全体を見渡し真理を追求する大日如来のような「唯一無二の存在」としての自信に満ちています。
+                        </p>
+                        <p class="text">
+                            一眼人は、まさに「一」という数字の持つ力を体現し、絶対的な個性と自由を持ちながら、自分の人生を切り開いていく存在です。
+                        </p>
+                        <div class="accordion" id="nestedAccordion1">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading1-1">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse1-1" aria-expanded="true" aria-controls="nestedCollapse1-1">
+                                        一眼人の性格：独立心とリーダーシップを備えた挑戦者の特徴 
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse1-1" class="accordion-collapse collapse" aria-labelledby="nestedHeading1-1" data-bs-parent="#nestedAccordion1">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            一眼人は、「一」という数字に象徴される独自の性格特性を持ち、強い自己信念、独立心、リーダーシップ、そして決断力が際立っています。彼らは物事を新たに始める力に優れ、挑戦を恐れず、常に前進する意欲を持っています。
+                                            それでは一眼人の性格を具体的に説明します。
+                                        </p>
+                                        <div class="caption">一眼人の性格</div>
+                                        <p class="text">
+                                            一眼人は単独行動派で個性が強く、自立心があり、自分の道を切り開く戦略家です。内面には強い野心や完璧主義が根付き、頭の回転が速いため、周囲から見ればどんな困難にも冷静に対処しているように見えます。
+                                            一方で、彼らは本質的に個人主義であり、他人に干渉されるのを嫌い、逆に他人にも干渉しないため、時に冷淡な印象を与えることもあります。特に無駄なことや意味のない会話には興味を示さず、雑談や社交辞合が苦手なため、社交的な場面では引っ込み思案な面が目立ちます。
+                                            しかし、必要がある時には表面上の社交性を見せることもできるため、周囲には「一匹狼でありながらも賢く戦略的に振る舞う人」と見られます。
+                                        </p>
+                                        <p class="text">
+                                            一眼人は物事を批判的に捉える性格で、深い洞察力を持ちながら、好奇心が旺盛で気になったことは徹底的に調べる凝り性です。物事の本質を見抜く能力が高く、表面だけを見て判断することはありません。
+                                            この鋭い観察眼と自己への厳しさから「やたら批判的」と誤解されることもありますが、これは彼らが物事を深く理解しようとする姿勢の現れです。
+                                        </p>
+                                        <p class="text">
+                                            また一眼人は秘密主義であり、心を開くまでに時間がかかります。周囲の人に対しては疑い深い面があり、その慎重さから友人は限られます。
+                                            しかし、自分と価値観が合う人に出会えた時にはとても嬉しく、深い関係を築こうとする一面もあります。一度心を許した相手とは、表面的な会話だけでなく、深い話や共通の興味について永遠に話し続けられるでしょう。
+                                            そのユーモアのセンスも独特で、時折皮肉めいた発言で相手を笑わせることもありますが、これも誤解されがちな一眼人ならではの一面です。
+                                        </p>
+                                        <p class="text">
+                                            一眼人は、新たな始まりや挑戦に対して前向きであり、物事のスタートを得意とする人物です。彼らは新しいプロジェクトや仕事、ライフステージのスタートに対して非常にエネルギッシュで、迷いなく一歩を踏み出すことができます。新しい環境や変化に対しても積極的に適応し、挑戦を楽しむ姿勢を持っています。
+                                        </p>
+                                        <p class="text">
+                                            この性質は、彼らが常に新しい機会を求め、成長し続けるための原動力となります。一眼人は、チャンスを見逃さず、リスクを恐れずに前進することができるため、さまざまな分野で成功を収める傾向があります。
+                                        </p> 
+                                    </div>
+                                </div>
+                            </div>                          
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading1-2">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse1-2" aria-expanded="true" aria-controls="nestedCollapse1-2">
+                                        一眼人の恋愛と結婚観
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse1-2" class="accordion-collapse collapse" aria-labelledby="nestedHeading1-2" data-bs-parent="#nestedAccordion1">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            一眼人は、恋愛において非常に慎重で、恋に簡単に落ちるタイプではありません。理屈っぽく、感情よりも論理を重視するため、恋愛の駆け引きや甘い言葉が苦手で、恋人を作るのが最も難しいタイプと言えるでしょう。
+                                            素直に自分の感情を表現するのが得意ではなく、愛情を言葉で伝えることに苦労することが多いため、周囲からは「恋愛下手」と思われることもあります。しかし、一眼人は面食いな面があり、外見や知性に惹かれる傾向が強く、自頭が良く優しい相手に特に魅力を感じます。
+                                        </p>
+                                        <p class="text">
+                                            一度心を開くと、一眼人は積極的で忠実なパートナーになります。自分を理解し、信じてくれる人に心を許すと、その人に対して献身的になり、深い絆を築こうと努力します。ただし、恋愛においても、適度な距離感を保つことが重要で、依存的な関係は好まない傾向があります。
+                                            特に男性は気さくで柔軟な女性に惹かれ、女性は一般的なウケを気にせず、自分の価値観に合った相手を選びます。 
+                                        </p>
+                                        <p class="text">
+                                            結婚に対しても、一眼人は非常に現実的な視点を持っています。愛だけでは結婚を決断できず、経済面や精神面の安定も重要視します。自分の欠点を補ってくれるような、互いに支え合える相手が理想です。
+                                            結婚相手には、自分が持つ合理的な考え方を尊重し、かつ支えとなるような人を望むため、結婚には時間がかかるかもしれませんが、長期的に安定した関係を築くことができます。   
+                                        </p>
+                                        <p class="text">
+                                            一眼人にとって、心を開くまでに時間がかかることや、愛情表現が不器用であることが障害となるかもしれません。しかし、自分を信頼してくれる相手が現れると、彼らはその関係を大切にし、結婚に至れば献身的で頼りがいのあるパートナーとして家庭を築くでしょう。  
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading1-3">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse1-3" aria-expanded="true" aria-controls="nestedCollapse1-3">
+                                        一眼人に適した職業
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse1-3" class="accordion-collapse collapse" aria-labelledby="nestedHeading1-3" data-bs-parent="#nestedAccordion1">
+                                    <div class="accordion-body">
+                                        <div class="caption">1.フリーランス（ライター、デザイナー、プログラマーなど）</div>
+                                        <p class="text">
+                                            一眼人は、独立して働く力に優れており、他者に依存せずに自分のペースで物事を進めることが得意です。個人で行動できる職業や、自由な裁量を持って働ける環境で力を発揮します。自分で決めた目標に向かって努力できるため、独自にプロジェクトを進めるような仕事が向いています。
+                                        </p>
+                                        <p class="text">
+                                            特徴：自分自身で自由に働ける環境や、独自に進められるプロジェクトに適しており、自分のビジョンを自由に追求できる仕事が合います。 
+                                        </p>
+                                        <div class="caption">2.経営者、プロジェクトマネージャー、企業の幹部職</div>
+                                        <p class="text">
+                                            一眼人は、強いリーダーシップを持ち、自分の信念を貫いて組織やプロジェクトをリードする能力に長けています。他者の意見に流されることなく、目標達成に向けて力強く前進する姿勢が、チームや部下を引っ張るリーダーシップに活かされます。責任感が強く、決断力を持って行動するため、リーダーとしての役割が適しています。  
+                                        </p>
+                                        <p class="text">
+                                            特徴：強い決断力とリーダーシップを発揮し、他者を導いて成功に導く役割を担うことが得意です。組織やプロジェクトを管理するリーダーとしての役割に適しています。 
+                                        </p>
+                                        <div class="caption">3.アーティスト（画家、作家、音楽家）、ファッションデザイナー、映像クリエイター</div>
+                                        <p class="text">
+                                            一眼人は、独自のビジョンを持ち、創造力が求められる分野で強みを発揮します。自分自身のアイデアや感性を自由に表現できる職業は、一眼人にとって非常に魅力的です。アーティストやクリエイティブな職業では、他者の影響を受けず、自分の感覚や独自のスタイルを貫くことができます。 
+                                        </p>
+                                        <p class="text">
+                                            特徴：創造的な能力を発揮し、自分のビジョンや感性を形にする職業に向いています。自己表現を重視し、独自のスタイルを追求できる職業で力を発揮します。  
+                                        </p> 
+                                        <div class="caption">4.アナリスト（経済、金融、マーケティング）、データサイエンティスト、投資家、トレーダー</div>
+                                        <p class="text">
+                                            一眼人は、物事を深く考え、洞察力を持って分析することが得意です。データや情報を精査し、正確な結論を導き出す能力に長けているため、分析や戦略を練る職業が向いています。また、問題解決や複雑な情報の整理が必要な職業においても、その能力が大いに発揮されます。
+                                        </p>
+                                        <p class="text">
+                                            特徴：深い洞察力と分析力を活かして、データや情報を精査し、的確な結論を導く職業に適しています。特に、問題解決や戦略策定において強みを発揮します。
+                                        </p>
+                                        <div class="caption">5. 医師、エンジニア、建築家、研究者、学者</div>
+                                        <p class="text">
+                                            一眼人は、一つの分野に集中して取り組む能力があるため、専門性が求められる職業で高い成果を上げます。特定の分野で専門的な知識を深め、それを活かして他者に指導したり、問題を解決する仕事に向いています。強い集中力と探究心で、自分の分野においてプロフェッショナルとして活躍できます。
+                                        </p>
+                                        <p class="text">
+                                            特徴：専門知識を深め、それを活かしてプロフェッショナルとして活躍できる職業に向いています。一つの分野で専門性を高め、他者を導く力を持っています。
+                                        </p>
+                                        <p class="text">
+                                            結論：一眼人に適した職業は、独立性、集中力、洞察力、リーダーシップを活かせる分野にあります。独自のビジョンを追求できるクリエイティブな職業や、自らの判断で物事を進められる職業が特に向いています。また、リーダーシップを発揮してチームを導いたり、専門性を持って深い知識を追求する仕事も一眼人に適しています。
+                                        </p>  
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading1-4">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse1-4" aria-expanded="true" aria-controls="nestedCollapse1-4">
+                                        一眼人が気を付けるべきこと
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse1-4" class="accordion-collapse collapse" aria-labelledby="nestedHeading1-4" data-bs-parent="#nestedAccordion1">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            一眼人は完璧主義で理想が高く、自分のペースで物事を進めたいと考える傾向が強いため、他人に対して批判的になりがちです。物事の本質を見抜く力がある分、周囲の短所や欠点が気になってしまい、時に厳しい言葉を口にすることがあります。
+                                            そのため、対人関係では意識的に柔軟さと寛容さを持ち、他人を受け入れる心の広さを意識すると良いでしょう。周囲がついていけない場面では、自分のペースだけでなく相手の気持ちや能力を尊重する姿勢が求められます。 
+                                        </p>
+                                        <p class="text">
+                                            また、一眼人は人に心を開くまでに時間がかかり、秘密主義な面があるため、周りに「近寄りがたい」たい」と誤解されることも少なくありません。これが孤立や誤解を招きやすいため、時には自分の考えや気持ちを素直に表現し、他人に少しずつ心を開いていく努力も必要です。
+                                            信頼できる人を見つけたら、遠慮せずに自分の思いを共有することで、安心感が生まれ、強固な人間関係が築けるでしょう。
+                                        </p>
+                                        <p class="text">
+                                            さらに、完璧主義からくる自己批判の強さにも気をつける必要があります。一眼人は自分に厳しいため、失敗した時や思い通りにいかない時に自己否定的な思考に陥りがちです。失敗も成長の一部と捉え、時には自分を許し、リラックスする時間を取ることが大切です。  
+                                        </p>  
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading1-5">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse1-5" aria-expanded="true" aria-controls="nestedCollapse1-5">
+                                        一眼人が健康で注意すべき事
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse1-5" class="accordion-collapse collapse" aria-labelledby="nestedHeading1-5" data-bs-parent="#nestedAccordion1">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            一眼人は、心臓や血液、肺に影響を与えることがあります。高血圧や動脈硬化、心筋梗塞などの循環器系疾患に注意が必要です。緊張状態が続くと血圧が上がりやすく、血流にも負担がかかり、心臓病のリスクが高まる傾向があります。
+                                            また、ストレスによって免疫力が低下しやすく、肺炎や気管支炎などの呼吸器疾患も発症しやすくなります。特に、過度な負荷や睡眠不足が続くと、これらのリスクが増すため、適度な休養とリラックスを心掛けることが重要です。 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading1-6">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse1-6" aria-expanded="true" aria-controls="nestedCollapse1-6">
+                                        ラッキーカラー:赤
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse1-6" class="accordion-collapse collapse" aria-labelledby="nestedHeading1-6" data-bs-parent="#nestedAccordion1">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            一眼人は、強い意志と行動力を持つリーダータイプです。ラッキーカラーは「赤」で、エネルギーと情熱を象徴し、一眼人の積極な性格をさらに引き出します。赤は一眼人の決断力を高め、目標達成に向けた行動力をサポートしてくれる色です。 
+                                        </p>   
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading1-7">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse1-7" aria-expanded="true" aria-controls="nestedCollapse1-7">
+                                        一眼人の有名人
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse1-7" class="accordion-collapse collapse" aria-labelledby="nestedHeading1-7" data-bs-parent="#nestedAccordion1">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            役所広司、Mrマリック、所ジョージ、片岡鶴太郎、本木雅弘、反町隆史、劇団ひとり、高倉健、六代目片岡愛之助、中条きよし、千原ジュニア、
+                                            桑田真澄、堂本剛、さだまさし、萩本欽一、上田晋也、泉谷しげる、浜田雅功、山下泰裕、千代の富士、中山秀征、田村正和、渡辺謙、城島茂、
+                                            内田裕也、宍戸錠、市川海老蔵、谷村新司、倉本聰、長嶋一茂、村上信五、浜田省吾、恵俊彰、松本清張、石立鉄男、亀田興毅、林家たい平、保坂尚輝    
+                                        </p>   
+                                        <p class="text">
+                                            山口百恵、工藤夕貴、小柳ゆき、hitomi、石川さゆり、荒川静香、押切もえ、大地真央、西田尚美、松岡茉優、浅野温子、小谷真生子、知花くらら、宮本信子、竹内結子、
+                                            木村佳乃、水ト麻美、鈴木愛理、広瀬香美、藤あや子 、草刈民代、橋田壽賀子、夏川結衣、久保田早紀、本田美奈子、米倉涼子、富永愛、足立梨花、大山のぶ代、瀧本美織、大坂なおみ、仲間由紀恵、鬼束ちひろ、ダンプ松本、加賀まりこ、広瀬アリス
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>       
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+                        <strong class="name">二眼人</strong>
+                        <p class="subtitle">- 多面的な視点と優しさで対立を調和に導く二眼人の魅力 -</p>
+                    </button>
+                </div>
+                <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionGanjin">
+                    <div class="accordion-body">
+                        <div class="caption">
+                            心優しく、思いやりに満ちた性格
+                        </div>
+                        <p class="text">
+                            二眼人は、仏教において「二」が象徴する調和とバランスを体現する存在です。男と女、陰と陽、明と暗が互いに補完し合うように、二眼人の優しさは他者との関係において障害を取り除き、和合をもたらします。二眼人は困っている人を見過ごすことができず、誰かが助けを求めればすぐに手を差し伸べます。  
+                        </p>
+                        <p class="text">
+                            この優しさは、天と地が対立することなく共存し、生命を育むように、二眼人も人間関係の調和を保ちながら、誰に対しても分け隔てなく接し、家庭円満や良好な人間関係を築く能力が際立っています。
+                        </p>
+                        <p class="text">
+                            また、二眼人の思いやりは、相手の小さな変化やニーズに敏感に反応し、陰陽のようにバランスの取れた細やかな配慮を自然に行えます。二眼人は、相手の笑顔を見ることで自らも喜びを感じる献身的な性格であり、その存在はまさに対立するものを一つにまとめ、調和を生み出す力に満ちています。こうして、障害を取り除いて平和な環境をつくり出し、人々を和合させます。
+                        </p>
+                        <div class="accordion" id="nestedAccordion2">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading2-1">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse2-1" aria-expanded="true" aria-controls="nestedCollapse2-1">
+                                        二眼人の性格：バランス感覚で築く信頼と成功
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse2-1" class="accordion-collapse collapse" aria-labelledby="nestedHeading2-1" data-bs-parent="#nestedAccordion2">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            二眼人は、調和、バランス、協力を基盤とした特性に基づいています。二眼人は、対立するものや異なる価値観を調整し、物事のバランスを取る力に優れています。
+                                            また、二眼人は他者との協力を通じて大きな成果を生み出し、安定した人間関係や環境を構築することが得意です。これは、「二」という数字の持つ象徴的な意味と密接に関連しており、二眼人はパートナーシップや人間関係において非常に強力な力を発揮します。 
+                                        </p>
+                                        <div class="caption">二眼人の性格</div>
+                                        <p class="text">
+                                            二眼人は、平和の象徴としてのパワーを持っています。彼らは争いや対立を嫌い、争いが発生した場合でも、対話や調停を通じて平和な解決を導くことが得意です。二眼人は、相手の立場や気持ちを理解し、問題を冷静に整理し、解決策を見つけ出す力があります。このため、彼らは友人や家族、職場など、あらゆる人間関係において仲介者としての役割を果たします。
+                                        </p>
+                                        <p class="text">
+                                            二眼人は、穏やかで優しい性格の持ち主で、誰に対しても親切で、周囲から慕われるタイプです。世話好きで、気遣い上手な「いい人」的な存在として、友人や家族、同僚からの信頼が厚く、困っている人を見過ごせないため、頼りにされることが多いです。二眼人がいると場が和み、自然とその場のムードメーカー的な役割を果たします。また、協調性が高く、組織や集団内の皆に親しまれ、どんな環境でもすぐに馴染めるのが大きな特徴です。
+                                        </p>
+                                        <p class="text">
+                                            社交的で誰とでもうまく付き合えるため、多くの人に好かれますが、実は繊細で傷つきやすく、批判や無関心に弱いところもあります。他人の悩みや心情に共感しやすいため、友人の話に心から耳を傾け、ときには一緒に涙を流すこともあります。争いごとや対立を避けたいと思っており、嫌なことがあっても断れないことが多く、自分の意見は皆が話した後に控えめに述べる傾向があるため、八方美人と見られることもあります。
+                                        </p>
+                                        <p class="text">
+                                            二眼人は、自分のことよりも他人を優先する姿勢を持っており、謙虚ですが、その優しさが裏目に出て、意見を押し付けられることもあります。さらに、褒められると素直に喜びますが、反対に批判されると非常に傷つきやすい性格です。また、動物好きで愛情深いため、犬や猫などにも強い親しみを持っており、癒される存在です。
+                                            イベントや集まりが好きで、SNSなどもこまめに返信するため、社交的でフットワークが軽いー方、内面では、自分の将来や計画について不安を感じることも多く、計画通りに物事が進まないと落ち込んでしまうこともあります。
+                                        </p>
+                                        <p class="text">
+                                            全体としては、相手を気遣い、場の空気を読み、周囲に安心感を与える存在ですが、自分を後回しにしすぎたり、無理をしてしまうところがあるため、自分の心身のケアを忘れず、他人の期待や目にとらわれないよう意識することが大切です。
+                                        </p> 
+                                    </div>
+                                </div>
+                            </div>                          
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading2-2">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse2-2" aria-expanded="true" aria-controls="nestedCollapse2-2">
+                                        二眼人の恋愛と結婚観
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse2-2" class="accordion-collapse collapse" aria-labelledby="nestedHeading2-2" data-bs-parent="#nestedAccordion2">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            二眼人は、恋愛において愛情深く、ストレートな愛情表現を得意とします。相手を喜ばせるのが得意で、サポートや思いやりの気持ちを惜しみなく注ぎ、相手に尽くします。
+                                            特に男性は優しくエスコートが上手で、女性は社会的・経済的に安定したパートナーに安心を求める傾向があるため、堅実で安定した付き合いを理想としています。愛情表現は分かりやすく、隠し事や曖昧さを嫌うため、恋人との信頼関係を築くことを大切にします。 
+                                        </p>
+                                        <p class="text">
+                                            恋愛においては感情的になりやすい面もあり、相手からの批判や冷たい態度に敏感で、「愛されていない」と感じると強い不安を抱きます。そのため、メンタルケアをお互いに行える関係が理想です。
+                                            優しさと共感を大切にする二眼人は、相手を支えながらも、自分も支えてほしいと願っており、パートナーシップにはお互いが支え合う関係性を求めます。何事にも誠実に向き合い、堅実さと優しさを持って信頼できるパートナーとなるため、二眼人と恋愛をすることで、相手も安心感や安定を感じることが多いでしょう。 
+                                        </p>
+                                        <p class="text">
+                                            結婚に関しては、二眼人は王道で平和な家庭生活を理想とし、安定と協調が中心の結婚生活を築こうとします。家庭内の雰囲気を大切にし、優しい夫・妻、良い父・母といった穏やかで安心できる家庭を目指します。家を整え、清潔感を保つことにもこだわりがあるため、家庭内の環境や雰囲気を整え、家族全員がリラックスできる場を作るのが得意です。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading2-3">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse2-3" aria-expanded="true" aria-controls="nestedCollapse2-3">
+                                        二眼人に適した職業
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse2-3" class="accordion-collapse collapse" aria-labelledby="nestedHeading2-3" data-bs-parent="#nestedAccordion2">
+                                    <div class="accordion-body">
+                                        <div class="caption">1.教師、教育者、カウンセラーセラピスト、HR（人事担者）</div>
+                                        <p class="text">
+                                            二眼人は、人間関係を円滑にする力を持っており、対人スキルを活かせる職業が非常に適しています。彼らは他者の感情や立場を理解し、対話を通じて信頼関係を築くことが得意です。
+                                            チームワークを必要とする仕事や、コミュニケーションが重要な職業において、そのバランス感覚が大いに役立ちます。人々の感情や問題に寄り添い、調整役としてサポートする力が発揮されます。クライアントの感情を理解し、冷静に解決策を提供することが得意です。
+                                        </p>
+                                        <div class="caption">2.メディエーター（調停者）、外交官、弁護士（特に交渉や調停を担当する分野）</div>
+                                        <p class="text">
+                                            二眼人は、調停者や仲介者としての役割を果たすことに長けています。異なる意見や利害を持つ人々の間で、双方が納得できる解決策を見つけるために尽力します。
+                                            彼らは、争いごとや対立が発生した際にも冷静で客観的な判断を下すことができ、バランスの取れた視点を持って行動するため、仲介役として非常に優秀です。企業や個人間の対立を調整し、双方にとって良い解決策を見つける仕事は、冷静な対話を通じて問題を解決し、平和をもたらします。    
+                                        </p>
+                                        <div class="caption">3.プロジェクトマネージャー、イベントプランナー、マーケティング担当者</div>
+                                        <p class="text">
+                                            二眼人は、チームワークを大切にし、他者と協力して物事を進めるのが得意です。リーダーシップを取ることもできますが、他者と共に働きながら、協力し合い、目標を達成することに喜びを感じます。周囲との調和を保ちながら、チーム全体を引っ張る役割を担うことができ、リーダー的な役割をサポートするポジションにも向いています。
+                                        </p> 
+                                        <div class="caption">4.映画プロデューサー、ディレクター、デザインコーディネーター、広告代理店スタッフ</div>
+                                        <p class="text">
+                                            二眼人は、協力しながらクリエイティブな活動を行うことにも適性があります。創造的なアイデアを出し合いながら、他者と協力して作品を作り上げる仕事や、クリエイティブなプロジェクトの中でバランスを取る役割が適しています。彼らは、自己表現と他者の意見を調和させ、クリエイティブなプロセスにおいても優れた協力者となります。
+                                            クライアントの意見を取り入れながら、クリエイティブなキャンペーンを企画・実行したり、複数の利害関係者の間でバランスを保ちながら、プロジェクトを進める仕事も向いています。
+                                        </p>
+                                        <div class="caption">5.ホテルスタッフ、看護師、医療ソーシャルワーカー、保育士、カスタマーサービス</div>
+                                        <p class="text">
+                                            二眼人は、他者に対して思いやりを持ち、サポートする力に優れているため、ホスピタリティやサービス業にも向いています。人々のニーズを敏感に感じ取り、快適な環境を提供することが得意です。相手の気持ちに寄り添いながら、細やかな対応が求められる仕事において、二眼人の気配りと調和を重んじる姿勢が活かされます。
+                                        </p>
+                                        <div class="caption">6.動物ケア、獣医学関係の職業、動物トレーナー、動物保護活動家</div>
+                                        <p class="text">
+                                            二眼人の動物愛と忍耐力は、動物ケアや獣医学の分野でその能力を発揮します。彼らは、動物の健康と幸福を守るために献身的に働き、動物とのコミュニケーションに長け獣医学の知識を相談し、ペットや野生動物の治療やケアを行い、動物の健康維持やリハビリテーションをサポートします。また、動物の保護や捕獲活動にも積極的に取り組み、動物の権利を守るために全力を尽くします。   
+                                        </p>  
+                                        <p class="text">
+                                            結論：二眼人に適した職業は、彼らの持つ調和、協力精神、柔軟性、調整力を活かせる仕事にあります。人間関係を大切にし、バランスを保ちながら他者と協力する職業が特に向いています。また、調停や仲介者としての能力が求められる仕事や、チーム全体をまとめて成功に導く役割でも、二眼人の力が大いに発揮されます。</p>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading2-4">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse2-4" aria-expanded="true" aria-controls="nestedCollapse2-4">
+                                        二眼人が気を付けるべきこと
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse2-4" class="accordion-collapse collapse" aria-labelledby="nestedHeading2-4" data-bs-parent="#nestedAccordion2">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            二眼人は人に対してとても優しく、協調性が高いため、他人に合わせすぎて自分を犠牲にしがちです。「NO」を言うのが苦手で、相手に合わせるばかりで自分の意見を後回しにしてしまうことが多く、結果的にストレスを抱え込むことも。
+                                            周りを気遣うのは大切ですが、自分の気持ちや体調を大切にする時間も確保しましょう。また、自分が頼られるのは嬉しい一方、限度を超えると疲れてしまうので、頼まれごとには無理のない範囲で応じることが重要です。
+                                        </p>
+                                        <p class="text">
+                                            感情が豊かで他人の気持ちに敏感な二眼人は、批判や冷たい態度を受けると傷つきやすい傾向があります。時には相手の発言を深刻に受け止めず、気持ちを切り替える訓練も役立ちます。また、「嫌われたくない」という気持ちが強く、無理をしがちですが、すべての人に好かれる必要はないと自分に言い聞かせることも大切です。
+                                        </p>
+                                        <p class="text">
+                                            さらに、集団や周囲の意見に流されやすい性格のため、時には自分の意見や価値観を大切にする姿勢が求められます。相手の期待に応えようとしすぎると、結果的に疲れ果ててしまうため、自分のペースや限界を意識することが重要です。
+                                            また、計画通りにいかないことに対して過剰に不安を感じることがあるので、柔軟に対応し、完璧を求めすぎないよう心がけると良いでしょう。
+                                        </p>  
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading2-5">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse2-5" aria-expanded="true" aria-controls="nestedCollapse2-5">
+                                        二眼人が健康で注意すべき事
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse2-5" class="accordion-collapse collapse" aria-labelledby="nestedHeading2-5" data-bs-parent="#nestedAccordion2">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            二眼人は、内向的で繊細な性質を持つため、消化器や神経系、腎臓や腰に関わる健康問題に注意が必要です。ストレスが胃腸に影響しやすく、胃潰瘍や過敏性腸症候群（IBS）、胃炎などの消化器疾患にかかりやすい傾向があります。また、神経過敏なため、ストレスや過労が原因で自律神経失調症や不安障害、うつ症状に繋がることも少なくありません。
+                                            さらに、腎臓が負担を感じやすく、腎炎や腎結石、腎不全などのリスクがあるため、水分補給をこまめに行い、塩分の過剰摂取には注意が必要です。加えて、日常生活での負担から腰痛や坐骨神経痛などの腰部の不調も生じやすいため、姿勢に気を配り、定期的なストレッチや軽い運動で腰をサポートすることが大切です。   
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading2-6">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse2-6" aria-expanded="true" aria-controls="nestedCollapse2-6">
+                                        ラッキーカラー:ピンク
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse2-6" class="accordion-collapse collapse" aria-labelledby="nestedHeading2-6" data-bs-parent="#nestedAccordion2">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            二眼人は、調和とバランスを大切にする性格です。ラッキーカラーは「ピンク」で、愛情や優しさ、温かみを表現します。ピンクは、人間関係を円滑にし、周囲との協力や調和を促進します。二眼人にとって、心の平和を保つための助けとなる色です。 
+                                        </p>   
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading2-7">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse2-7" aria-expanded="true" aria-controls="nestedCollapse2-7">
+                                        二眼人の有名人
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse2-7" class="accordion-collapse collapse" aria-labelledby="nestedHeading2-7" data-bs-parent="#nestedAccordion2">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            真矢、太川陽介、南原清隆、ヒロミ、南こうせつ、出川哲郎、佐藤B作、藤岡弘、村上龍、楽丸裕英、北大路吹也 、亀梨和也、野口五郎、宇崎竜童、山本圭一、峰竜太、赤楚衛二、加藤茶、三遊亭小遊三、
+                                            桜井和寿、佐野元春、竹中直人、上岡龍太郎、三宅裕司、橋幸夫、唐沢寿明、つるの剛士、筑紫哲也、堤真一、久保田利伸、森山未來、藤竜也、内山信二、北村総一朗、光石研、池谷幸雄、ビビる大木、徳川慶喜、孫文、山田孝之、西田敏行、名倉潤  
+                                        </p>   
+                                        <p class="text">
+                                            長山洋子、伊藤蘭、きゃりーぱみゅぱみゅ、テレサテン、有村架純、相田翔子、中島みゆき、兼高かおる、魚住りえ、 優木まおみ、戸田菜穂、吉永小百合、ビビアンスー、稲森いずみ、大石恵、竹内まりや、大下容子、伊東美咲、木佐彩子、長澤まさみ、
+                                            沢口靖子、山口もえ、三吉彩花、芦田愛菜、南野陽子、シシドカフカ、研ナオコ、水川あさみ、アグネスチャン、白石麻衣、梅宮アンナ、高橋ひとみ、川崎希、佐田真由美、浅田真央、朝比奈彩、堀北真希、山口智子、尾野真千子、加藤あい、貫地谷しほり、平愛梨、瀬戸朝香  
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>       
+                </div>
+            </div>
+      
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+                        <strong class="name">三眼人</strong>
+                        <p class="subtitle">- 調和と成長を導く三眼人　過去・現在・未来を見通す第三の眼のパワー -</p>
+                    </button>
+                </div>
+                <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionGanjin">
+                    <div class="accordion-body">
+                        <div class="caption">
+                            天・地・人のバランスを保つ三眼人
+                        </div>
+                        <p class="text">
+                            三眼人は、仏教や神道における「三」という数字が象徴する安定と調和を体現しています。「三」は、天・地・人という宇宙の三要素を表し、三眼人はそのすべてにおいて絶妙なバランス感覚を持っています。
+                            人間関係においても、相手に応じて適切な距離感を維持し、臨機応変に対応することが得意です。三眼人は、どのような状況でもスムーズに人と関わり、自然な調和を保つことができます。  
+                        </p>
+                        <p class="text">
+                            三眼人が他者との関係を良好に保てるのは、相手をよく観察し、興味を持って接しているからです。日常生活においても、太陽、月、星がそれぞれ異なる役割を果たしながら調和して輝くように、三眼人は関係を少しずつ深め、確かな信頼関係を築きます。そのバランス感覚は、見えないところで他者との絆を強めていく大きな力となります。   
+                        </p>
+                        <div class="accordion" id="nestedAccordion3">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading3-1">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse3-1" aria-expanded="true" aria-controls="nestedCollapse3-1">
+                                        三眼人の性格：調和と創造力で成功と繁栄を引き寄せる力
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse3-1" class="accordion-collapse collapse" aria-labelledby="nestedHeading3-1" data-bs-parent="#nestedAccordion3">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            三眼人のパワーは、創造力、調和、成長、洞察力といった特性に基づいています。三眼人は、物事の本質を見抜く優れた洞察力を持ち、あらゆる状況に対してバランスを取りながら発展させる力を発揮します。彼らは、知恵や直感を活かし、新しいアイデアや創造的な解決策を見つけ出すことが得意です。このパワーは、「三」の数字が象徴する調和、発展、繁栄という要素に強く結びついています。  
+                                        </p>
+                                        <div class="caption">三眼人の性格</div>
+                                        <p class="text">
+                                            三眼人は、知識と論理を追求する事に貪欲であり、知的好奇心が旺盛です。幅広い知識を持ち、一人でじっくり物事に没頭することを好みます。自由を大切にし、束縛されることや形式に縛られるのを嫌うため、地位や名誉には無関心で、他人にどう見られるかよりも自分が納得できるかどうかを重視します。飽き性な面があるため、関心があるものに対してのみ集中力を発揮し、好き嫌いもはっきりしています。
+                                        </p>
+                                        <p class="text">
+                                            また、三眼人の最大の強みの一つは、創造力です。彼らは、物事を一から作り上げるアイデアを持ち、状況を新たに発展させる力を持っています。三眼人は、固定観念にとらわれることなく、柔軟に物事を捉えることで新しい解決策や視点を生み出します。また、成長や発展を目指し、常に新しいことに挑戦しようとする姿勢が彼らのパワーをさらに強化します。 
+                                        </p>
+                                        <p class="text">
+                                            普段は控えめで穏やかですが、他人に愛想を振りまくことはなく落ち着いているため、感情の起伏が少ないように見えます。無駄なことが嫌いで合理的に行動するため、どんなことにも効率を重視し、お世辞や社交辞令が苦手で、自分の価値観に正直であり、相手の矛盾や間違いに気づくと容赦なく指摘することもあります。   
+                                        </p>
+                                        <p class="text">
+                                            三眼人は人見知りなところがあり、一人の時間を好む孤独好きです。友達をたくさん作ることよりも、深く信頼できる少数の友人を大切にします。普段は静かでリアクションも薄めですが、仲の良い人には意外なユーモアを見せ、気さくで面白い一面を発揮することもあります。ただし、騒がしくはしゃぐ人や無知な人には少し冷淡な態度を取ることもあり、自分のことをいじられるのも苦手です。
+                                        </p>
+                                        <p class="text">
+                                            感情的な言葉や押しつけがましい態度に対しては気持ちが冷めてしまい、あくまで論理的な会話を好みます。何かを深く考えたり、新しい知識を得るときには生き生きとしており、興味を引かれると一気に没頭する集中力を発揮します。その一方で、静かに沈黙が続いても気にせず、自分のペースを保ち続けることができるクールな一面を持っています。  
+                                        </p> 
+                                    </div>
+                                </div>
+                            </div>                          
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading3-2">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse3-2" aria-expanded="true" aria-controls="nestedCollapse3-2">
+                                        三眼人の恋愛と結婚観
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse3-2" class="accordion-collapse collapse" aria-labelledby="nestedHeading3-2" data-bs-parent="#nestedAccordion3">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            三眼人は内向的で、恋愛においても控えめで消極的なタイプです。外見に重きを置かず、特定の条件を満たした相手にだけ心を開きます。彼らにとって恋愛とは、駆け引きや一時的な関係ではなく、長期的で信頼できるパートナーとの絆です。
+                                            心を開ける相手には、純粋で素直な愛情を示し、浮気などの裏切りは一切しない一途な性格です。また、知性や独自の考え方を持っている人に惹かれる傾向があり、恋人には知的な刺激を求め、共通の興味を持つことが重要です。
+                                        <p class="text">
+                                            相手が素朴で無邪気ならば、三眼人はその自然体に惹かれ、安心感を得やすくなります。しかし、独特なこだわりが強いため、自分のペースや趣味、個人の時間を尊重してくれる人でないとうまくいきません。自分だけの時間をとても大切にするため、恋人であってもその空間を侵されたくはなく、一人でいる時間が確保できてこそ、穏やかでいられるのです。
+                                        </p>
+                                        <p class="text">
+                                            結婚においてもその性格は変わらず、プライベートな空間や時間を重視する三眼人は、結婚後も一人になれる場所や時間を持つことが心の安定につながります。特に三眼人の女性は、恋人や家族のために一途に尽くす面を持ちながらも、相手には一定の距離感やリスペクトを求め、依存しすぎずに自由な感覚で支え合うことを理想とします。男性は、一見するとクールですが、親しくなるとユーモアを見せ、心地よい関係を築きます。   
+                                        </p>
+                                        <p class="text">
+                                            三眼人は愛情表現があまり得意でなく、「何を考えているのかわからない」と言われがちですが、内面では深い愛情を抱き、しっかりとした信頼関係を築こうとします。ちょっとした苦難にも冷静に対応し、互いの成長を支え合えるような関係を目指します。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading3-3">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse3-3" aria-expanded="true" aria-controls="nestedCollapse3-3">
+                                        三眼人に適した職業
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse3-3" class="accordion-collapse collapse" aria-labelledby="nestedHeading3-3" data-bs-parent="#nestedAccordion3">
+                                    <div class="accordion-body">
+                                        <div class="caption">1.アート、クリエイティブ分野の職業、デザイナー（グラフィック、ファッション、インテリアなど）</div>
+                                        <p class="text">
+                                            三眼人は、創造力と独自の視点を持ち、新しいアイデアを生み出す力があります。絵画や彫刻、インスタレーションなど、視覚的に魅力的な作品や広告やウェブデザイン、商品パッケージなど、商業的な目的の制作などクリエイティブな分野でその才能を発揮することが多いです。特に、自分の感性やアイデアを形にできる環境があれば、三眼人は大きな満足感と成功を手に入れることができます。
+                                        </p>
+                                        <div class="caption">2.コンサルタントやアドバイザーの職業、経営コンサルタント、財務アドバイザー、人材コンサルタント</div>
+                                        <p class="text">
+                                            三眼人は、洞察力に優れており、複雑な状況を分析して問題を解決することが得意です。また、他者と協力し、対話を通じて最適な解決策を見つけることもできるため、コンサルティング業務に向いています。特に、ビジネスやライフスタイルの改善に関わる職業では、そのバランス感覚が活かされます。      
+                                        </p>
+                                        <div class="caption">3.教育や指導に関わる職業、人材育成、教育関係の職業、教師、教授、インストラクター</div>
+                                        <p class="text">
+                                            三眼人は、洞察力とバランス感覚を活かして、他者を導く役割にも適しています。特に、教育分野では学生の成長をサポートし、複数の意見や価値観を調整しながら教えることが得意です。また、冷静で落ち着いた判断力を持っているため、教育現場での問題解決にも長けています。
+                                            教える能力とコミュニケーションスキルも高く、人材育成や教育の分野でその価値を発揮します。彼らは、個人の学習者や従業員の成長を支援し、スキル向上や知識の習得を学習プログラムやトレーニングをし、個々のニーズに応じた指導を行うことで、成果を上げることができます。  
+                                        </p> 
+                                        <div class="caption">4.不動産関係の職業、不動産投資家、不動産エージェント</div>
+                                        <p class="text">
+                                            三眼人は鋭い洞察力と分析力を持ち、長期的な視点で物事を捉えることが得意です。不動産市場の変動やリスクを見据え、将来的な価値の上昇を見越して投資判断を行うため、適切なタイミングでの売買判断を行い、効率かつ安定的な利益を生み出すことが得意です。
+                                        </p>
+                                        <div class="caption">5.スピリチュアルやヒーリングに関わる職業・ヨガや瞑想のインストラクター</div>
+                                        <p class="text">
+                                            三眼人の感受性や洞察力は、他者の精神的な成長をサポートする役割などに活かされます。相手の心の状態を直感的に理解し、癒しや成長のための導きを提供することができます。また精神的な成長やバランスに強く関心を持つため、スピリチュアルな分野やヒーリングにも適性があります。
+                                            彼らの洞察力や感受性は、他者を癒すための直感的なアプローチに非常に有効です。また、精神的な成長をサポートする役割を通じて、内面のバランスを保ちながら仕事をすることができます。    
+                                        </p>
+                                        <div class="caption">6.研究開発関係の職業・研究者・エンジニア・バイオテクノロジスト</div>
+                                        <p class="text">
+                                            三眼人の探究心と創造力は、研究開発分野で大きなカを発揮します。彼らは、問題解決に向けた新しいアプローチを見つけるために、根気強くデータを収集し、実験や分析をし、また技術革新や新しい知識の探求に強い関心を持ち、皆さんの技術や製品を改善・発展させるために常に努力を惜しみません。気配りをしながら、画期的なアイデアを実現するためのプロセスを設計します。
+                                        </p>  
+                                        <p class="text">
+                                            結論：三眼人に適した職業は、彼らの持つ直感力、創造力、洞察力、バランス感覚を活かすことができる分野です。クリエイティブな仕事や他者を指導・サポートする役割、さらに問題解決を必要とするコンサルティングや仲介業務など、さまざまな職業で活躍することができます。特に、直感や洞察力を活かして新しいアイデアを生み出しながら、周囲との調和を保ちながら成功を目指すことができる環境で、三眼人はその能力を最大限に発揮することができるでしょう。</p>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading3-4">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse3-4" aria-expanded="true" aria-controls="nestedCollapse3-4">
+                                        三眼人が気を付けるべきこと
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse3-4" class="accordion-collapse collapse" aria-labelledby="nestedHeading3-4" data-bs-parent="#nestedAccordion3">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            三眼人は一人で物事に没頭しやすく、自分のペースや空間を大切にしますが、それが行き過ぎると周囲から孤立しやすくなります。周囲との交流が希薄になりがちなので、時には自分から他者に関わり、意見や視点を取り入れてみることも大切です。これにより視野が広がり、思わぬ気づきが得られることもあります。  
+                                        </p>
+                                        <p class="text">
+                                            完璧主義で、自分の知識やスキルに対するこだわりが強い三眼人は、失敗を避ける傾向があり、これがプレッシャーにつながることもあります。自分に厳しすぎず、時には「失敗も成長の一部」と考える柔軟さを持つことで、より自然体で物事に取り組むことができます。 
+                                        </p>
+                                        <p class="text">
+                                            また、三眼人は感情表現が控えめで、他人から「何を考えているか分からない」と思われがちです。自分の気持ちや考えを伝える努力をすることで、周囲との誤解を防ぎ、より良い人間関係を築けます。特に指摘や批判をする際には、相手の気持ちを配慮し、できるだけ柔らかく伝えるよう意識することが大切です。   
+                                        </p> 
+                                        <p class="text">
+                                            合理的で効率的な生き方を重視するあまり、興味がない物事に無関心で、先延ばしにしがちな面もあります。興味の範囲を広げ、締切に余裕をもって行動することができれば、精神的な余裕も増えるでしょう。また、何事も自己流に進める傾向があるため、時には周囲の意見に耳を傾ける柔軟さも忘れないよう心がけると、さらに成長につながります。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading3-5">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse3-5" aria-expanded="true" aria-controls="nestedCollapse3-5">
+                                        三眼人が健康で注意すべき事
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse3-5" class="accordion-collapse collapse" aria-labelledby="nestedHeading3-5" data-bs-parent="#nestedAccordion3">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            三眼人は、目や呼吸器、生殖器系に関わる健康問題に注意が必要です。パソコンや本を使った作業が多い場合、眼精疲労やドライアイ、近視や白内障といった目のトラブルが起こりやすい傾向があります。特に目を酷使しやすいため、定期的に休憩を取って目をリフレッシュさせることが大切です。 
+                                        </p>
+                                        <p class="text">
+                                            また、喘息や慢性気管支炎といった呼吸器系疾患にも注意が必要です。過度な緊張状態が続くと、気道が敏感になり、呼吸のトラブルを引き起こすことがあります。
+                                        </p>
+                                        <p class="text">
+                                            また、喘息や慢性気管支炎といった呼吸器系疾患にも注意が必要です。過度な緊張状態が続くと、気道が敏感になり、呼吸のトラブルを引き起こすことがあります。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading3-6">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse3-6" aria-expanded="true" aria-controls="nestedCollapse3-6">
+                                        ラッキーカラー:黄色
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse3-6" class="accordion-collapse collapse" aria-labelledby="nestedHeading3-6" data-bs-parent="#nestedAccordion3">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            三眼人は、知的好奇心が旺盛で柔軟な思考を持つタイプです。ラッキーカラーは「黄色」で、明るさや知恵、創造力を象徴します。黄色は、三眼人の知的活動を活性化し、集中力や情報処理能力を高めます。コミュニケーションカも向上させてくれる色です。
+                                        </p>   
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading3-7">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse3-7" aria-expanded="true" aria-controls="nestedCollapse3-7">
+                                        三眼人の有名人
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse3-7" class="accordion-collapse collapse" aria-labelledby="nestedHeading3-7" data-bs-parent="#nestedAccordion3">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            宮本亜門、ちばてつや、鈴木善幸、伊能忠敬、李登輝、河野洋平、葉加瀬太郎、立川志の輔、斎藤司、滝沢秀明、鈴木亮平、忌野清志郎、小泉進次郎、山里亮太、秋元康、太田光、大竹まこと、小峠英二、小澤征悦、是枝裕和、
+                                            池井戸潤、石坂浩二、立川談春、前川清、松本幸四郎、ディーンフジオカ、みのもんた、斎藤工、タモリ、ウエンツ瑛士、生瀬勝久、ラサール石井、塚本高史、堀内孝雄、糸井重里、デーモン小暮、森進一、岡田准一、古田新太、長州力 、篠山紀信、香川照之、古館伊知郎
+                                        </p>   
+                                        <p class="text">
+                                            深津絵里、浜田京子、江利チエミ、吉岡里帆、樹木希林、コシノヒロコ、坂上みき、野沢直子、篠原ともえ、今井美樹、ミランダカー、夏木マリ、熊田曜子、松丸友紀、若槻千夏、中尾ミエ、森香澄、相武紗季、二コールキッドマン、本田翼、木村沙織、菅野美穂、北川景子、羽野晶紀、三船美佳、
+                                            岡本夏生、田恵子、松本まりか、羽田美智子、永野芽郁、吹石一恵、仙道敦子、伊達公子、神田沙也加、滝川クリステル、菊池桃子、山瀬まみ、浜崎あゆみ、杉咲花、中山エミリ、三田佳子、夏川りみ、高橋真麻、松嶋菜々子、山本舞香、木村文乃、山村紅葉、青山テルマ、川島なお美、高岡早紀、壇蜜、伊藤かずえ   
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>       
+                </div>
+            </div>
+      
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
+                        <strong class="name">四眼人</strong>
+                        <p class="subtitle">- 堅実な計画と揺るぎない行動力を持つ四眼人 -</p>
+                    </button>
+                </div>
+                <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionGanjin">
+                    <div class="accordion-body">
+                        <div class="caption">
+                            慎重で安定した計画性、基礎を固めて成功を導く四眼人 
+                        </div>
+                        <p class="text">
+                            四眼人は、仏教や神道における「四」の数字が象徴する安定と調和を体現する存在です。東西南北、四方を見渡すように、こんな状況にも慎重に対応し、リスクを的確に分析して、確実な行動を選びます。四眼人は行動を起こす前に、まるで観音菩薩・地蔵菩薩・文殊菩薩・普賢菩薩が持つ力に導かれるように、入念な準備を重ねます。 
+                        </p>
+                        <p class="text">
+                            観音菩薩の慈悲に象徴される四眼人の配慮は、人間関係において安定感をもたらし、周囲から深い信頼を得ます。彼らはどんなに難しい局面でも、地蔵菩薩のような揺るぎない安定感で対応し、混乱に流されることなく冷静に状況を見極めます。その結果、四眼人は対立が起きた場合にも、文殊菩薩の智慧を持って問題を整理し、理性的に解決へと導くため、周囲の人々から頼りにされる存在となります。
+                        </p>
+                        <p class="text">
+                            さらに、普賢菩薩が象徴する行動力を持つ四眼人は、単に慎重なだけではなく、基礎をしっかりと固めた上で、確実に行動へ移します。その行動には、準備万端で挑むため、自信と安定感が常に伴い、結果として成功を手にすることができるのです。彼らの周到さと安定感は、まさに四方を守る守護者のように、離散を防ぎ、周囲との結びつきを強固にします。
+                        </p>
+                        <p class="text">
+                            四眼人の慎重さと計画性は、短期的な成功に留まらず、結果的に長期的な安定へと成長していきます。彼らの存在は、まるで四大菩薩がそれぞれの力をもって守る四方のように、基盤を固め、あらゆる困難を乗り越えながら、確実に成功を導いていくのです。
+                        </p>
+                        <div class="accordion" id="nestedAccordion4">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading4-1">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse4-1" aria-expanded="true" aria-controls="nestedCollapse4-1">
+                                        四眼人の性格：堅実に繁栄を築く吉兆の力
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse4-1" class="accordion-collapse collapse" aria-labelledby="nestedHeading4-1" data-bs-parent="#nestedAccordion4">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            四眼人は、彼らの持つ安定性、調和、基盤の強化、堅実さを中心に発揮されます。四眼人は、物事を安定させ、堅実に前進する力を持っており、周囲の人々や状況に対してバランスを保ちながら進めていくことが得意です。また、家庭や人間関係、仕事などにおいても、しっかりとした基盤を築き、長期的な成長を支える役割を果たします。彼らは精神的な安定感と冷静さを持ち、困難な状況においても揺るがない力を発揮することができます。 
+                                        </p>
+                                        <div class="caption">四眼人の性格</div>
+                                        <p class="text">
+                                            四眼人は、物事の基盤をしっかりと築く力を持っています。彼らは、どんな状況においても冷静に対応し、長期的な成功を見据えて行動します。このため、ビジネスやプロジェクトにおいても、短期的な利益や成功に惑わされることなく、安定した進展を目指すことができます。特に、組織やチームの基盤を強固にする役割を担うことが得意で、周囲からの信頼も厚いです。 
+                                        </p>
+                                        <p class="text">
+                                            四眼人は穏やかで献身的な性格であり、平和主義で争いを嫌います。誰に対しても丁寧で気を遣う傾向があります。控えめで、周囲に気を配りながら相手の気持ちを察して行動するため、場の空気を和ませます。また四眼人は物事の基盤を強化し、それを守護する力があります。家庭や仕事、健康、財産といった重要な側面で、安定をもたらし、それらを守る力を発揮します。彼らの持つ守護の力が、不運や困難な状況から自分自身や周囲を守り、安定した環境を維持するのに役立ちます。 
+                                        </p>
+                                        <p class="text">
+                                            しかし、優柔不断な面があり、自分の意見を主張するより、周りに従うことが多いため、新しい挑戦や急な変化には慎重になりがちです。また、相手の期待に応えようと頑張りすぎてしまう傾向があり、無理をして疲れやすく、心配性のため、ストレスを感じやすい面があります。その優しさゆえに他人に利用されたり、損な役回りを引き受けてしまうこともありますが、自分ではあまり断れないのが特徴です。また、思いやりを持って周囲を支える一方で、内心でストレスをためてしまうこともあります。
+                                        </p>
+                                        <p class="text">
+                                            四眼人は親しい人と深い関係を築くことを大切にし、友人は狭く深く付き合うタイプです。表向きは控えめで謙虚なため、初対面の相手には物静かに映りますが、一度心を開いた相手には、内向的ながらも積極的に話をしたり、親しみを持って接することができるところが、四眼人の大きな魅力です。謙虚すぎるところや、自分のことを過小評価しやすい傾向があるため、少しずつ自分にも自信を持っていくことが大切でしょう。
+                                        </p>
+                                        <p class="text">
+                                            普段は怒りを抑えて耐えるタイプですが、滅多に怒らない四眼人が本気で怒ったときは黙り込んでしまい、その姿がかえって怖いと感じさせることもあります。基本的に他人に優しく接する四眼人ですが、自分には厳しくストイックに振る舞うため、無理をしすぎないことが大切です。 
+                                        </p> 
+                                    </div>
+                                </div>
+                            </div>                          
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading4-2">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse4-2" aria-expanded="true" aria-controls="nestedCollapse4-2">
+                                        四眼人の恋愛と結婚観
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse4-2" class="accordion-collapse collapse" aria-labelledby="nestedHeading4-2" data-bs-parent="#nestedAccordion4">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            四眼人は、恋愛において控えめで受け身ですが、一度好きになると深く一途に尽くすタイプです。相手をとことん好きになり、他の人には目もくれず、サポート役として恋人を支えたいと思う気持ちが強く、恋愛に対する誠実さが際立ちます。
+                                            自分から誘うことは苦手で、積極的なアプローチはしませんが、しっかりとしたリードをしてくれる相手には心を開きやすく、恋愛に発展しやすいでしょう。 
+                                        <p class="text">
+                                            また、四眼人は内面を重視しますが、意外と面食いな面もあり、相手に外見や人柄に一定の基準を求めます。騒がしすぎるタイプやせっかちな人は苦手で、穏やかで落ち着きがあり、安心できる相手に惹かれます。
+                                            恋愛は慎重で、適当に付き合うことを嫌うため、関係が深まるまでは時間がかかるものの、付き合い始めると長く安定した関係を築くことができます。恋人ができると少し束縛がちになるところもありますが、それは相手を大切にしたい気持ちの表れです。
+                                        </p>
+                                        <p class="text">
+                                            結婚に関しては非常に安定志向で、家庭をしっかりと支える良き伴侶となります。四眼人の男性は、家族のために責任感を持って仕事に取り組み、家庭の安定を第一に考えます。
+                                            四眼人の女性は、夫をサポートし、家庭が円満で安らげる場になるよう尽力し、家族を支えるパートナーとしての役割にやりがいを感じます。家庭を大切にする四眼人は、相手や家族に対して深い愛情を注ぎ、穏やかで安定した家庭生活を望みます。  
+                                        </p>
+                                        <p class="text">
+                                            子どもができた場合、四眼人は教育にもしっかりとカを注ぎ、子どもの成長を温かく見守ります。献身的で面倒見が良いため、優しさとしっかりとした指導のバランスを取りながら、子どもに安定感と安心を与える良い親となります。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading4-3">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse4-3" aria-expanded="true" aria-controls="nestedCollapse4-3">
+                                        四眼人に適した職業
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse4-3" class="accordion-collapse collapse" aria-labelledby="nestedHeading3-3" data-bs-parent="#nestedAccordion4">
+                                    <div class="accordion-body">
+                                        <div class="caption">1.法律、法務の分野</div>
+                                        <p class="text">
+                                            四眼人は、論理的思考と堅実な判断ができるため、法律や法務の分野でも非常に向いています。彼らは細部にわたる注意力と冷静な分析力を活かし、法律に基づいた適切な判断を下すことができます。法律関係の仕事は、感情に流されることなく理性的に対応する力が求められますが、四眼人はその要求に応えることができます。   
+                                        </p>
+                                        <p class="text">
+                                            職業例：<br>
+                                            ・弁護士、法務担者：法的な判断や適切なアドバイスを行うことで、クライアントや企業の安定をサポートします。
+                                            ・行政書士：正確な書類作成や手続きを通じて、法律面での安定した支援を提供します。
+                                        </p>
+                                        <div class="caption">2.財務、経理、会計の分野</div>
+                                        <p class="text">
+                                            四眼人は、数字に強く、正確で安定した作業が求められる財務や会計業務にも非常に適しています。彼らは、慎重に計画を進めながらミスのない正確な仕事をこなすため、経理や会計などのお金に関わる業務に強い適性があります。また、長期的な資産管理や企業の安定した成長を見据えた戦略的な判断を行うことも得意です。     
+                                        </p>
+                                        <p class="text">
+                                            職業例：<br>
+                                            ・経理、会計士：正確な作業と数字に強い四眼人は、経理や会計士として非常に信頼される存在となるでしょう。
+                                            ・ファイナンシャルプランナー：お金の運用や資産形成において堅実なアドバイスを提供し、クライアントの長期的な安定をサポートできます。
+                                        </p>
+                                        <div class="caption">3.教育、指導職</div>
+                                        <p class="text">
+                                            四眼人は、バランス感覚と安定感を活かして、教育や指導職でも成功を収めることができます。彼らは、計画的で整った方法で知識を伝えることが得意で、教え子や生徒に安心感を与えることができます。また、教育現場では生徒たちの成長を長期的に見守りながらサポートする役割が求められますが、四眼人はこの点においても強みを発揮します。  
+                                        </p> 
+                                        <p class="text">
+                                            職業例：<br>
+                                            ・教師、教授：安定した教育方針と冷静な指導が求められる教育職は、四眼人にとって非常に向いています。
+                                            ・企業研修インストラクター：計画的な指導力と分かりやすい説明を活かして、社員の育成やスキルアップをサポートする役割です。
+                                        </p>
+                                        <div class="caption">4.医療、福祉分野</div>
+                                        <p class="text">
+                                            四眼人は、人を支え、安定したサポートを提供するカを持っているため、医療や福祉の分野でも非常に適しています。患者やクライアントの健康や福祉を支える仕事は、長期的なケアや安定した支援が求められますが、四眼人は冷静かつ堅実にその役割を果たすことができます。また、患者や利用者との関係においても調和を重んじ、安心感を与える存在です。
+                                        </p>
+                                        <p class="text">
+                                            職業例：<br>
+                                            ・看護師、医療スタッフ：冷静さと堅実な対応が求められる看護職は、四眼人の安定感が活かせる分野です。
+                                            ・ソーシャルワーカー、介護職：安定した支援と、長期的にケアを提供することが求められる福祉職も、四眼人に適しています。
+                                        </p>
+                                        <div class="caption">5.経営・管理職</div>
+                                        <p class="text">
+                                            四眼人は、堅実で安定した進行管理を得意とするため、経営や管理職に向いています。彼らは、冷静に状況を分析し、全体のバランスを保ちながら効率的にチームをまとめることができます。また、感情に流されず理性的に判断できるため、組織やチームの安定を保ちながら成果を出すことが得意です。   
+                                        </p>
+                                        <p class="text">
+                                            職業例：<br>
+                                            ・プロジェクトマネージャー：計画的な進行とリーダーシップを発揮し、プロジェクトを堅実に成功へ導くことができる役割です。
+                                            ・企業経営者、部長クラスの管理職：安定した組織運営と長期的なビジョンを持って業務を進めることが得意な四眼人は、経営者や管理職としても成功する可能性が高いです。
+                                        </p>
+                                        <div class="caption">6.建築・エンジニアリング分野</div>
+                                        <p class="text">
+                                            四眼人の持つ計画力と安定した進行管理の能力は、建築やエンジニアリングの分野でも大いに活かされます。彼らは、堅実な進行計画を立てながら、精密で正確な作業を行うことが得意です。建築やエンジニアリングは、長期的な計画と安定した成果を求められる分野であり、四眼人の持つ特質が求められます。   
+                                        </p>  
+                                        <p class="text">
+                                            職業例：<br>
+                                            ・建築士、土木技師：計画的で安定した進行管理が求められる建築や土木分野は、四眼人にとって適した職業です。
+                                            ・システムエンジニア、インフラエンジニア：技術面での安定と堅実な作業を求められるエンジニアリングの仕事でも四眼人の能力が活かされます。
+                                        </p>
+                                        <div class="caption">7.農業 ・目然環境分野</div>
+                                        <p class="text">
+                                            四眼人は、自然との調和や安定した進行を重んじる性質を持っているため、農業や自然環境保護の分野でも活躍することができます。自然環境を保護したり、堅実に農作物を育てたりするためには、長期的な視野と安定したケアが必要ですが、四眼人はこれを得意としています。   
+                                        </p>  
+                                        <p class="text">
+                                            職業例：<br>
+                                            ・農業経営者：自然との調和を大切にしながら、堅実に経営を行うことで長期的な成果を目指すことができます。
+                                            ・自然環境保護活動家：調和を重んじる四眼人は、自然環境保護の分野で安定した活動を行うことができます。
+                                        </p>
+                                        <p class="text">
+                                            結論：四眼人に適した職業は、彼らの持つ安定感、堅実さ、調和を重んじる性質を最大限に活かすことができる分野です。管理職や経理、教育、医療、法律、エンジニアリング、農業など、冷静な判断力、計画性、長期的な視野を必要とする仕事が特に向いています。四眼人は、安定した環境の中で堅実に物事を進め、長期的な成功を築く力を持っているため、その特性を活かせる職業で大きな成果を上げることができるでしょう。</p>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading4-4">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse4-4" aria-expanded="true" aria-controls="nestedCollapse4-4">
+                                        四眼人が気を付けるべきこと
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse4-4" class="accordion-collapse collapse" aria-labelledby="nestedHeading4-4" data-bs-parent="#nestedAccordion4">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            四眼人は周囲への気配りが得意で、誰に対しても親切で献身的ですが、その優しさゆえに自分を犠牲にしがちです。相手の期待に応えようとしすぎて、無理をしてしまうことがあり、結果的に疲れが溜まることが多いです。他人のために尽くすことは大切ですが、自分の体調や気持ちを優先する時間も意識的に確保しましょう。   
+                                        </p>
+                                        <p class="text">
+                                            また、優柔不断であるため、何かを決める際に悩みがちです。人に合わせすぎて自分の意見や希望を表現することが苦手なため、時には「自分はどうしたいのか」と問いかけ、自分の意見をはっきり伝えることを練習すると良いでしょう。誰にでも良い顔をしようとすることが、逆にストレスを引き起こすこともあるため、無理に合わせず、自分を大切にする姿勢を持つことが重要です。  
+                                        </p>
+                                        <p class="text">
+                                            四眼人は、他人に優しい一方で、自分には厳しすぎる傾向もあります。完璧を求めるあまり、自分の努力や成果を過小評価しがちですが、少しずつ自分を認めてあげる意識を持つと、心が軽くなるでしょう。失敗や不完全さを許し、リラックスする時間を持つことで、メンタルのバランスが整いやすくなります。    
+                                        </p> 
+                                        <p class="text">
+                                            また、誰かに注意や批判をされると、過度に落ち込んでしまうことも。周りの目を気にしすぎることで、本来の自分の考えや希望が見えにくくなることがあるため、批判を受けてもすぐに気を落とさずに、自分の考えを大切にすることも重要です。 
+                                        </p>
+                                        <p class="text">
+                                            最後に、四眼人は気配りや奉仕心が強い分、周りの人から頼られることが多いですが、時には断る勇気も持つようにしましょう。頼まれると断れず、疲れが溜まってしまうことがあるため、自分のペースを保つための「NO」も大切です。他人を気遣うあまり自分が犠牲にならないよう、自分の心の声に耳を傾ける習慣を身につけましょう。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading4-5">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse4-5" aria-expanded="true" aria-controls="nestedCollapse4-5">
+                                        四眼人が健康で注意すべき事
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse4-5" class="accordion-collapse collapse" aria-labelledby="nestedHeading4-5" data-bs-parent="#nestedAccordion4">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            四眼人は、腎臓や脳、目まいに関する病気に注意が必要です。腎臓に負担がかかると、腎炎や腎結石、腎不全などのリスクが高まりますので、塩分を控えめにし、水分をしっかり摂ることが大切です。
+                                            また、ストレスや疲労がたまると、めまいや耳鳴りが起こりやすくなります。さらに、長時間の集中や疲れが脳に影響を与えると、脳卒中や一過性の脳虚血発作などのリスクがあるため、適度に休息を取ることを心掛けましょう。  
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading4-6">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse4-6" aria-expanded="true" aria-controls="nestedCollapse4-6">
+                                        ラッキーカラー:緑
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse4-6" class="accordion-collapse collapse" aria-labelledby="nestedHeading4-6" data-bs-parent="#nestedAccordion4">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            四眼人は、堅実で安定を重視するタイプです。ラッキーカラーは「緑」で、安定感や調和、成長を象徴します。緑は、四眼人の落ち着きとバランスをサポートし、心身をリラックスさせながら、着実に目標を達成する力を与えてくれる色です。
+                                        </p>   
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading4-7">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse4-7" aria-expanded="true" aria-controls="nestedCollapse4-7">
+                                        四眼人の有名人
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse4-7" class="accordion-collapse collapse" aria-labelledby="nestedHeading4-7" data-bs-parent="#nestedAccordion4">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            浜村淳、あおい輝彦、田中裕二、ダンディ坂野、乙武洋匡、秋山幸二、上地雄輔、宅麻伸、前田亘輝、阿部サダヲ、森山直太朗、国広富之、宮根誠司、北村有起、宝田明、昭和天皇裕仁、宮台真司、竹中平蔵、村山富市、渡部篤郎、工藤公康、馳浩、
+                                            地井武男、松田龍平、山田涼介、奥田民生、日村勇紀、槙原敬之、寺尾聡、王貞治、賀来賢人、三谷幸喜、谷原章介、草彅剛、関根勤、仲村トオル、草刈正雄、松田優作、矢部浩之、山本耕史、シアヌーク殿下、蒋介石
+                                        </p>   
+                                        <p class="text">
+                                            財前直見、池上季実子、田嶋陽子、森本智子、宮沢りえ、小宮悦子、黒田清子（皇族）、朝日奈央、トラウデン直美、原千晶、一色紗英、田中裕子、岸田今日子、阿木燿子、本上まなみ、原沙知絵、与田祐希、中川翔子、鷲見奈、風吹ジュン、
+                                            光浦靖子、中島知子、長谷川潤、壇ふみ、いとうあさこ、松たか子、板野友美、なるみ、浅野ゆう子、久本雅美、松下由樹、安倍なつみ、門脇麦、本田真凛、菊地亜美、二階堂ふみ、趣里、はしのえみ、浜木綿子、安藤優子、池脇千鶴、指原莉乃、（他アナウンサー多数）
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+      
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5">
+                        <strong class="name">五眼人</strong>
+                        <p class="subtitle">- 五眼人の力強いオーラと守護 -</p>
+                    </button>
+                </div>
+                <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#accordionGanjin">
+                    <div class="accordion-body">
+                        <div class="caption">
+                            五元素が導く情熱とエネルギー
+                        </div>
+                        <p class="text">
+                            五眼人の「五」という数字は、五行説や仏教の教えに基づいた強力なエネルギーを持っています。「五」という数字は、自然界の五大要素（地、水、火、風、空）を象徴し、これらの調和とバランスが五眼人の力の源となっています。
+                            この五大元素は、彼らの生き方や行動に深く根ざしており、常に何かに夢中になり、エネルギーに満ちた姿勢で日々を過ごす彼らの特徴を支えています。
+                        </p>
+                        <p class="text">
+                            まず、地は五眼人の安定感や忍耐力を表し、困難な状況にも揺るがず、粘り強く対応できる力を与えます。彼らが失敗やトラブルに直面しても、素早く気持ちを切り替え前進していけるのは、この地の要素があるからです。
+                        </p>
+                        <p class="text">
+                            次に、水は柔軟性と適応力を象徴しています。五眼人は、変化する状況に対しても流れるように順応し、周囲の状況に敏感に対応することができます。彼らは楽しみを見つけるのが得意で、ワクワク感を持って日々を過ごすのも、この水のエネルギーによるものです。                 
+                        </p>
+                        <p class="text">
+                            火のエネルギーは、五眼人の情熱と行動力を象徴しています。彼らは内に私めた情熱を爆発させるように、全力で物事に取り組む力強さを持ち、周囲に強い印象を与えます。この火の力が、彼らの強い意志と集中力を支え、目標に向かってまっすぐに進んでいく原動力となっています。                
+                        </p>
+                        <p class="text">
+                            また、風は自由な思考やコミュニケーション能力を象徴し、五眼人の柔軟な発想力と人を引きつける力を与えます。彼らのエネルギーは常に周囲にポジティブな影響を与え、前向きな雰囲気を生み出します。この風の力が、五眼人を魅力的で活力に満ちた存在にしているのです。               
+                        </p>
+                        <p class="text">
+                            最後に、空は五眼人の精神的な成長や高次元の悟りを意味し、彼らの行動や考えが深い知恵と繋がっていることを示しています。五眼人は、物事の本質を見抜く力を持ち、困難な状況でも高い視点から物事を見つめ、より良い解決策を導き出すことができます。               
+                        </p>
+                        <p class="text">
+                            さらに、五眼人は仏教の五大明王（不動明王、降三世明王、大威徳明王、軍荼利明王、金剛夜叉明王）の強力な加護を受けており、彼らを不運や災難、不幸から守る力も持っています。この明王たちの守護力は、彼らの内なるパワーを一層強固なものとし、困難に立ち向かう際の頼もしい支えとなっています。                
+                        </p>
+                        <p class="text">
+                            五眼人の持つ「五」のエネルギーは、周囲にポジティブな影響を与えるだけでなく、彼ら自身の成功と成長を導く源でもあります。五大元素と五大明王の力を備えた五眼人は、その情熱、知恵、そして強力な守護力によって、常に前向きに進んでいく力を持ち、周囲にとって頼もしい存在となっているのです。
+                        </p>
+                        <div class="accordion" id="nestedAccordion5">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading5-1">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse5-1" aria-expanded="true" aria-controls="nestedCollapse5-1">
+                                        五眼人の性格：エネルギッシュで情熱的なオーラを持つ
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse5-1" class="accordion-collapse collapse" aria-labelledby="nestedHeading5-1" data-bs-parent="#nestedAccordion5">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            五眼人は、バランス、調和、成長、自由、変化を受け入れる力に強く結びついています。五眼人は、物事の流れやエネルギーの変化を柔軟に捉え、調和を保ちながら成長していく特質を持っています。
+                                            彼らは、固定された枠にとらわれることなく、新しい挑戦や変化を恐れずに受け入れ、前進する力を持っているのが特徴です。また、五つの要素をバランスよく活用し、生活や仕事、人間関係において安定と成長をもたらす力を持っています。 
+                                        </p>
+                                        <div class="caption">五眼人の性格</div>
+                                        <p class="text">
+                                            五眼人は、自由と柔軟性を大切にし、変化を受け入れる力に優れています。彼らは、新しいアイデアや挑戦に対して非常にオープンで、固定観念に縛られることなく自由な発想で物事に取り組みます。環境や状況が変わっても、柔軟に対応し、適応する力が強いため、困難な状況でも前向きに進むことができます。五眼人は、創造的で自由な精神を持ちながらも、安定性を維持することができるバランスの取れた力を持っています。
+                                        </p>
+                                        <p class="text">
+                                            また、行動力と決断力が抜群です。大胆でリアリスト、楽天家でもあり、細かいことを気にせず常に本音で話します。他人の目や評価をほとんど気にせず、物事をストレートに表現するので一緒にいると楽しい存在です。特に、自分のペースで自由に動きたいと考えるため、集団行動やルールに縛られるのを嫌い、自分で決めたことに対しては全力で突き進みます。
+                                            場を盛り上げる中心的な存在でありながら、束縛されることには耐えられず、興味がなくなると急に場から姿を消すことも。要領が良く、頭の回転が速いため、臨機応変に対応でき、数歩先を読んで物事を進められます。人の目や評価に無頓着で、言いたいことをそのまま口に出すため、無神経に見えることもありますが、それでも周囲から好意的に受け入れられるのは、その裏に意外と常識的な部分や、寛容な面もあるからです。
+                                        </p>
+                                        <p class="text">
+                                            五眼人は楽観的で前向き、少し失敗しても「また次がある」と気持ちを切り替えるメンタルの強さを持っています。どんな失敗でも大した問題と捉えないため、「反省」という概念が少し薄い傾向にありますが、これも彼らの魅力の一つです。むしろ、失敗を新たなスタートと考えるため、一回失敗してからが本番とも言えるでしょう。
+                                            自分に甘く、地道な努力はあまり得意ではありませんが、一か八かで挑む度胸があるため、ここぞという場面で大きな勝負に挑むのが得意です。また、誰に対しても偏見を持たず、基本的に他人に寛容で、面白い人を好みます。適応力もあり、新しい環境や変化にすぐに対応できるため、人と打ち解けるのが早いです。ただ、興味がない相手には無関心で、嫌いな人や自分に合わない人とは損得なしに距離をおきます。目上の人や権威に対しても、自分が納得できないと従いませんが、尊敬する人には素直に耳を傾けます。このように、五眼人は自由で豪快、細かいことを気にしない大らかさが魅力の人です。 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>                          
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading5-2">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse5-2" aria-expanded="true" aria-controls="nestedCollapse5-2">
+                                        五眼人の恋愛と結婚観
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse5-2" class="accordion-collapse collapse" aria-labelledby="nestedHeading5-2" data-bs-parent="#nestedAccordion5">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            五眼人は恋愛において、自分からアプローチするタイプで、好きな相手には積極的に動きます。見た目を重視する傾向が強く、第一印象が重要。
+                                            気に入った相手には気取った演出でアプローチし、楽しい時間を共に過ごせる相手に惹かれるため、一緒に笑って過ごせるポジティブな雰囲気の人を好みます。そのため、興味がない相手やタイプではない人には露骨に冷たい態度を見せることもあり、ストレートで隠しきれない好意が周囲にも分かりやすいタイプです。
+                                        <p class="text">
+                                            五眼人は駆け引きが好きで、冷たくされるほど追いかけたくなる性分があり、すぐに手に入る関係よりも少し難易度が高い相手に魅力を感じることも。しかし、恋愛を「遊び」のように捉えることもあり、燃え尽きると一気に興味を失うことも少なくありません。
+                                            ただし、浮気に対しては一線を引いており、本気で誰かに心を移すことはないものの、恋愛経験は豊富で、結婚前に多くの恋を経験するでしょう。
+                                        </p>
+                                        <p class="text">
+                                            結婚に関しては、「夢のある理想の家庭」というよりも、実際の楽しさや快適さを求める現実的な視点を持ちます。賑やかで楽しい家庭生活を理想とし、夫婦の関係にも「お互い楽しさを共有できること」を重視します。家族を明るくまとめる人気者であり、子どもができれば、五眼人の男性は子どもにとって面白くて頼れるお父さんになり、ユーモアたっぷりで社交的な親として、子どもや友人にも好かれる存在になります。  
+                                        </p>
+                                        <p class="text">
+                                            一方で、五眼人の女性は家庭的な役割や家事が得意ではないことも多いですが、持ち前の明るさで家族を笑顔にする存在です。賑やかで明るい家庭を築くことを大切にしつつも、お互いが無理をせず、自由に過ごせる家庭環境を重視する傾向があり、「束縛せず、信頼し合う関係」が理想です。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading5-3">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse5-3" aria-expanded="true" aria-controls="nestedCollapse5-3">
+                                        五眼人に適した職業
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse5-3" class="accordion-collapse collapse" aria-labelledby="nestedHeading5-3" data-bs-parent="#nestedAccordion5">
+                                    <div class="accordion-body">
+                                        <div class="caption">1.起業家、経営者に関する分野</div>
+                                        <p class="text">
+                                            五眼人は大胆な決断力と行動力を持ち、自由な発想と強いリーダーシップを活かして起業家や経営者としての成功が期待できます。変化を恐れず常に前向きで、リスクを乗り越えながら目標に向かう姿勢は、事業拡大や新規ビジネスの立ち上げに向いています。
+                                            自分の信念を持ち、他人の評価に左右されずに行動できるため、競争の激しい経営環境でも新しい戦略を取り入れ、企業を独自の方向へ導く力を持っています。また、他者を巻き込み、明るくカリスマ性のあるコミュニケーションで、チームやクライアントの信頼を築くことにも長けています。
+                                        </p>
+                                        <p class="text">
+                                            職業例：<br>
+                                            ・起業家：新しいアイデアを迅速に事業化し、柔軟な発想で事業を展開するため、起業家として多くの可能性を秘めています。
+                                            ・経営者：社員の意見に耳を傾けながらも、決断力を持ってリーダーシップを発揮する五眼人は、企業の成長を導く経営者としても活躍します。
+                                            ・新規事業開発マネージャー：柔軟な考えと前向きな姿勢で新規事業の立ち上げをサポートし、会社の成長に貢献する役割が適しています。
+                                        </p>
+                                        <div class="caption">2.フリーランス、独立系の職業</div>
+                                        <p class="text">
+                                            五眼人は、自由と自己管理を大切にし、自分のペースで働けるフリーランスの職業や独立した仕事に向いています。彼らは、自分自身でプロジェクトを進めることができ、柔軟な働き方を好むため、スケジュール管理や仕事の進め方を自分で決められる環境で成果を上げることができます。また、変化に強いので、多様なクライアントやプロジェクトにも対応可能です。      
+                                        </p>
+                                        <p class="text">
+                                            職業例：<br>
+                                            ・フリーランスライター、ブロガー：自由なスタイルで執筆し、自分の意見や考えを表現できます。
+                                            ・ウェブデザイナー、プログラマー：技術とデザインを組み合わせ、自分のペースで仕事を進めることができます。
+                                            ・コンサルタント：クライアントに自由な発想でアドバイスを提供し、自分の知識とスキルを活かして働くことができます。
+                                        </p>
+                                        <div class="caption">3.マーケティング、企画職</div>
+                                        <p class="text">
+                                            五眼人は、柔軟な発想力を持ち、市場やトレンドの変化に対応する力に優れているため、マーケティングや企画職での活躍が期待できます。市場のニーズに敏感で、新しいアイデアをどんどん生み出すことが得意です。また、コミュニケーション能力も高く、チームと協力しながらプロジェクトを進める力があります。自由な発想と柔軟な思考を活かし、ビジネスの世界で成功することができるでしょう。  
+                                        </p> 
+                                        <p class="text">
+                                            職業例：<br>
+                                            ・マーケティングディレクター、ブランドマネージャー：市場の動向を見極め、新しい戦略を立案し、実行する役割を担います。
+                                            ・プロダクトプランナー、イベントプランナー：自由な発想で新しい製品やイベントを企画し、柔軟に対応しながら進行します。
+                                            ・広告プランナー、クリエイティブディレクター：創造的なアイデアを活かし、ブランドを効果的にプロモーションする役割です。
+                                        </p>
+                                        <div class="caption">4.教育、指導職</div>
+                                        <p class="text">
+                                            五眼人は、変化を受け入れる能力と柔軟性を持っており、教育や指導の分野でも力を発揮します。彼らは、型にとらわれない新しい学びや教え方を提供し、生徒やクライアントにとって新しい視点やアプローチを与えることが得意です。また、自己成長を大切にし、他者にもその成長の喜びを伝える力を持っています。教えるだけでなく、自分自身も常に学び、成長し続けることができます。
+                                        </p>
+                                        <p class="text">
+                                            職業例：<br>
+                                            ・講師、教師：生徒の成長を支援し、新しい学びの方法を提案できる教育の場で活躍します。
+                                            ・キャリアカウンセラー、コーチ：人々の成長を促し、自己実現をサポートする役割を担います。
+                                            ・企業研修インストラクター：ビジネススキルや専門知識を教え、社員の成長をサポートします。
+                                        </p>
+                                        <div class="caption">5.建設、土木関係の職業</div>
+                                        <p class="text">
+                                            五眼人の優れた創造力は、建設・土木業界において非常に重要な役割を果たします。彼らは、プロジェクトの進行において、効率性と安全性を両立させることが得意です。構造物の設計や現場の管理において、細部まで目を配り、最適な資材や技術を選定することで、プロジェクトを成功に導きます。また、自然環境やコミュニティのニーズに配慮し、持続可能な建設を実現するための戦略を立案します。五眼人は、長期的な視点で建設現場やインフラ整備をリードし、社会に貢献します。  
+                                        </p>
+                                        <p class="text">
+                                            職業例：<br>
+                                            ・プロジェクトマネージャー：建設プロジェクトの進行を統括し、効率的かつ安全に作業が進むよう管理します。
+                                            ・土木技師：都市やインフラの設計・施工を行い、地域社会にとって有益なインフラ整備を担います。
+                                            ・施工管理者：現場の安全や進行状況を監督し、工期通りに高品質な建物やインフラを完成させます。
+                                        </p>
+                                        <div class="caption">6.環境、自然保護関連職</div>
+                                        <p class="text">
+                                            五眼人は、自由な発想と調和を大切にする性質を持っているため、環境保護や自然に関わる分野でも適しています。彼らは、自然環境に対して敏感で、サステナブルなビジネスモデルやエコシステムの維持に興味を持つことが多いです。また、環境問題に対する新しい解決策を見つける能力や、持続可能な未来を目指して活動することにやりがいを感じます。
+                                        </p> 
+                                        <p class="text">
+                                            職業例：<br>
+                                            ・環境コンサルタント：企業や団体に対して環境に配慮した取り組みを提案し、持続可能な発展をサポートします。
+                                            ・自然保護活動家、エコツーリズムガイド：自然環境を守る活動を行い、観光客にその大切さを伝えます。
+                                            ・サステナビリティプランナー：企業や団体に対し、持続可能なビジネスプランを提案し、環境保護を促進します。
+                                        </p> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading5-4">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse5-4" aria-expanded="true" aria-controls="nestedCollapse5-4">
+                                        五眼人が気を付けるべきこと
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse5-4" class="accordion-collapse collapse" aria-labelledby="nestedHeading5-4" data-bs-parent="#nestedAccordion5">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            五眼人は、自分の本音をストレートに表現する性格ですが、その率直さが他人を傷つけたり、無意識に不快感を与えたりすることがあります。自分の気持ちや意見をしっかり伝えることは大切ですが、相手の気持ちや状況にも配慮し、時には言葉を選ぶことが必要です。さらに、デリカシーが欠けていると見られることもあるため、自分の意見や行動がどのように受け止められるかを意識すると、人間関係がより円滑になるでしょう。
+                                            また、五眼人は大胆かつ自由な考え方が持ち味ですが、自分の直感や勢いだけで決断せず、計画性を持って行動することで、安定した成果を出せるようになります。新しいチャレンジが得意な五眼人だからこそ、冷静にリスクを見極める意識が必要です。   
+                                        </p>
+                                        <p class="text">
+                                            他人に対して無頓着になりがちな点も五眼人の特徴です。自分が楽しければ他のことは気にしない傾向があるため、興味がない人には冷たく見えることがあります。
+                                            しかし、人との関わりや支えが後々役に立つ場面も多いため、時には周囲への配慮を心がけると良いでしょう。  
+                                        </p>
+                                        <p class="text">
+                                            さらに、五眼人は自由で束縛を嫌うため、チームでの協力が苦手になることがあります。組織やグループでの活動においても、周囲との協調を意識し、柔軟に他者と歩調を合わせるよう努めることが重要です。自分の独自性を発揮しつつも、チーム全体の目標を忘れないことが成功の鍵です。   
+                                        </p> 
+                                        <p class="text">
+                                            最後に、五眼人は物事に夢中になりやすい一方で飽き性でもあり、継続的な努力が苦手です。長期的な目標に向かって地道に取り組むことや、一度始めたことを最後までやり遂げる意識を持つことで、さらに成長し、信頼を得られるでしょう。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading5-5">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse5-5" aria-expanded="true" aria-controls="nestedCollapse5-5">
+                                        五眼人が健康で注意すべき事
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse5-5" class="accordion-collapse collapse" aria-labelledby="nestedHeading5-5" data-bs-parent="#nestedAccordion5">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            五眼人は、頭痛や血圧の問題、さらに内耳に関わるメニエール病、高血圧や動脈硬化、血栓症などの血液循環に関わる健康問題に注意が必要です。頻繁な緊張やストレスが蓄積すると、片頭痛や緊張型頭痛といった頭痛の症状が現れやすく、血流が滞ることでさらに痛みが悪化することがあります。
+                                            また、強いストレスや疲労が溜まると、めまいや耳鳴りを伴うメニエール病のリスクが高まることがあります。特に五眼人は目標に向かって突き進む性格のため、休息を後回しにしがちで、この病気が悪化しやすいため、定期的なリラックスタイムが大切です。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading5-6">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse5-6" aria-expanded="true" aria-controls="nestedCollapse5-6">
+                                        ラッキーカラー:オレンジ
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse5-6" class="accordion-collapse collapse" aria-labelledby="nestedHeading5-6" data-bs-parent="#nestedAccordion5">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            五眼人は、自由を愛し冒険心に溢れた性格です。ラッキーカラーは「オレンジ」で、エネルギーや創造性、活力を象徴します。オレンジは、五眼人の大胆さや情熱を引き出し、新しいことに挑戦する力を強化します。楽観的で明るい気持ちにさせてくれる色です。
+                                        </p>   
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading5-7">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse5-7" aria-expanded="true" aria-controls="nestedCollapse5-7">
+                                        五眼人の有名人
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse5-7" class="accordion-collapse collapse" aria-labelledby="nestedHeading5-7" data-bs-parent="#nestedAccordion5">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            中田英寿、千葉真一、高須克弥、星野仙一、オードリー春日、伊集院静、狩野英孝、加納典明、徳永英明、梅宮辰夫、三木谷浩史、白鵬翔、大沢たかお、御手洗毅（キャノン）、原田泰造、島田紳助、羽鳥慎一、伊武雅人、的場浩司、宮迫博之、舘ひろし、毒蝮三太夫、西城秀樹、藤田まこと、
+                                            愛川欽也、沢田研二、高田文夫、明石家さんま、江頭2時50分、原辰徳、内村光良、薬師寺保栄、井上陽水、内藤大助、松本潤、桝太一、矢沢永吉、中村獅童、東国原英夫、内野聖陽、蜷川幸雄、清水国明、郷ひろみ、柄本明、小林旭、松岡修造、山崎努、世良公則、にしきのあきら、笑福亭鶴瓶、山崎まさよし、ナダル
+                                        </p>   
+                                        <p class="text">
+                                            鈴木亜美、都はるみ、富田靖子、金子恵美、中井美穂、中村江里子、土屋アンナ、奥山佳恵、篠田麻里子、くわばたりえ、綾瀬はるか、レディーガガ、神田うの、水野真紀、萬田久子、上沼恵美子、石田ひかり、松居一代、松浦亜弥、ダイアナ王妃、長谷川京子、香西かおり、宮川花子、小谷実可子、
+                                            重盛さと美、島谷ひとみ、高橋愛、安達祐実、上戸彩、黒木瞳、吉田沙保里、ヒコロヒー、真木よう子、水原希子、森泉、京野ことみ、仲里依紗、カルーセル麻紀、松嶋尚美、中野美奈子、勝間和代、矢田亜希子、小島瑠璃子、倉科カナ
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+      
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6">
+                        <strong class="name">六眼人</strong>
+                        <p class="subtitle">-  -</p>
+                    </button>
+                </div>
+                <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#accordionGanjin">
+                    <div class="accordion-body">
+                        <div class="caption">
+                            
+                        </div>
+                        <p class="text">
+                            
+                        </p>
+                        <p class="text">
+                           
+                        </p>
+                        <div class="accordion" id="nestedAccordion6">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading6-1">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse6-1" aria-expanded="true" aria-controls="nestedCollapse6-1">
+                                        六眼人の性格：
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse6-1" class="accordion-collapse collapse" aria-labelledby="nestedHeading6-1" data-bs-parent="#nestedAccordion6">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <div class="caption">六眼人の性格</div>
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <p class="text">
+                                             
+                                        </p> 
+                                    </div>
+                                </div>
+                            </div>                          
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading6-2">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse6-2" aria-expanded="true" aria-controls="nestedCollapse6-2">
+                                        六眼人の恋愛と結婚観
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse6-2" class="accordion-collapse collapse" aria-labelledby="nestedHeading6-2" data-bs-parent="#nestedAccordion6">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <p class="text">
+                                              
+                                        </p>
+                                        <p class="text">
+                                            
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading6-3">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse6-3" aria-expanded="true" aria-controls="nestedCollapse6-3">
+                                        六眼人に適した職業
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse6-3" class="accordion-collapse collapse" aria-labelledby="nestedHeading6-3" data-bs-parent="#nestedAccordion6">
+                                    <div class="accordion-body">
+                                        <div class="caption"></div>
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <div class="caption"></div>
+                                        <p class="text">
+                                                  
+                                        </p>
+                                        <div class="caption"></div>
+                                        <p class="text">
+                                              
+                                        </p> 
+                                        <div class="caption"></div>
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <div class="caption"></div>
+                                        <p class="text">
+                                                
+                                        </p>
+                                        <div class="caption"></div>
+                                        <p class="text">
+                                            
+                                        </p>  
+                                        <p class="text">
+                                            結論：</p>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading6-4">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse6-4" aria-expanded="true" aria-controls="nestedCollapse6-4">
+                                        六眼人が気を付けるべきこと
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse6-4" class="accordion-collapse collapse" aria-labelledby="nestedHeading6-4" data-bs-parent="#nestedAccordion6">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                              
+                                        </p>
+                                        <p class="text">
+                                             
+                                        </p>
+                                        <p class="text">
+                                               
+                                        </p> 
+                                        <p class="text">
+                                            
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading6-5">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse6-5" aria-expanded="true" aria-controls="nestedCollapse6-5">
+                                        六眼人が健康で注意すべき事
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse6-5" class="accordion-collapse collapse" aria-labelledby="nestedHeading6-5" data-bs-parent="#nestedAccordion6">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                             
+                                        </p>
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <p class="text">
+                                            
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading6-6">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse6-6" aria-expanded="true" aria-controls="nestedCollapse6-6">
+                                        ラッキーカラー:
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse6-6" class="accordion-collapse collapse" aria-labelledby="nestedHeading6-6" data-bs-parent="#nestedAccordion6">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            
+                                        </p>   
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading6-7">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse6-7" aria-expanded="true" aria-controls="nestedCollapse6-7">
+                                        六眼人の有名人
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse6-7" class="accordion-collapse collapse" aria-labelledby="nestedHeading6-7" data-bs-parent="#nestedAccordion6">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            
+                                        </p>   
+                                        <p class="text">
+                                              
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+    
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7">
+                        <strong class="name">七眼人</strong>
+                        <p class="subtitle">-  -</p>
+                    </button>
+                </div>
+                <div id="collapse7" class="accordion-collapse collapse" data-bs-parent="#accordionGanjin">
+                    <div class="accordion-body">
+                        <div class="caption">
+                            
+                        </div>
+                        <p class="text">
+                            
+                        </p>
+                        <p class="text">
+                           
+                        </p>
+                        <div class="accordion" id="nestedAccordion7">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading7-1">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse7-1" aria-expanded="true" aria-controls="nestedCollapse7-1">
+                                        七眼人の性格：
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse7-1" class="accordion-collapse collapse" aria-labelledby="nestedHeading7-1" data-bs-parent="#nestedAccordion7">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <div class="caption">七眼人の性格</div>
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <p class="text">
+                                             
+                                        </p> 
+                                    </div>
+                                </div>
+                            </div>                          
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading7-2">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse7-2" aria-expanded="true" aria-controls="nestedCollapse7-2">
+                                        七眼人の恋愛と結婚観
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse7-2" class="accordion-collapse collapse" aria-labelledby="nestedHeading7-2" data-bs-parent="#nestedAccordion7">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <p class="text">
+                                              
+                                        </p>
+                                        <p class="text">
+                                            
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading7-3">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse7-3" aria-expanded="true" aria-controls="nestedCollapse7-3">
+                                        七眼人に適した職業
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse7-3" class="accordion-collapse collapse" aria-labelledby="nestedHeading7-3" data-bs-parent="#nestedAccordion7">
+                                    <div class="accordion-body">
+                                        <div class="caption"></div>
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <div class="caption"></div>
+                                        <p class="text">
+                                                  
+                                        </p>
+                                        <div class="caption"></div>
+                                        <p class="text">
+                                              
+                                        </p> 
+                                        <div class="caption"></div>
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <div class="caption"></div>
+                                        <p class="text">
+                                                
+                                        </p>
+                                        <div class="caption"></div>
+                                        <p class="text">
+                                            
+                                        </p>  
+                                        <p class="text">
+                                            結論：</p>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading7-4">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse7-4" aria-expanded="true" aria-controls="nestedCollapse7-4">
+                                        七眼人が気を付けるべきこと
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse7-4" class="accordion-collapse collapse" aria-labelledby="nestedHeading7-4" data-bs-parent="#nestedAccordion7">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                              
+                                        </p>
+                                        <p class="text">
+                                             
+                                        </p>
+                                        <p class="text">
+                                               
+                                        </p> 
+                                        <p class="text">
+                                            
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading7-5">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse7-5" aria-expanded="true" aria-controls="nestedCollapse7-5">
+                                        七眼人が健康で注意すべき事
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse7-5" class="accordion-collapse collapse" aria-labelledby="nestedHeading7-5" data-bs-parent="#nestedAccordion7">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                             
+                                        </p>
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <p class="text">
+                                            
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading7-6">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse7-6" aria-expanded="true" aria-controls="nestedCollapse7-6">
+                                        ラッキーカラー:
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse7-6" class="accordion-collapse collapse" aria-labelledby="nestedHeading7-6" data-bs-parent="#nestedAccordion7">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            
+                                        </p>   
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading7-7">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse7-7" aria-expanded="true" aria-controls="nestedCollapse7-7">
+                                        七眼人の有名人
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse7-7" class="accordion-collapse collapse" aria-labelledby="nestedHeading7-7" data-bs-parent="#nestedAccordion7">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            
+                                        </p>   
+                                        <p class="text">
+                                              
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+    
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8">
+                        <strong class="name">八眼人</strong>
+                        <p class="subtitle">-  -</p>
+                    </button>
+                </div>
+                <div id="collapse8" class="accordion-collapse collapse" data-bs-parent="#accordionGanjin">
+                    <div class="accordion-body">
+                        <div class="caption">
+                            
+                        </div>
+                        <p class="text">
+                            
+                        </p>
+                        <p class="text">
+                           
+                        </p>
+                        <div class="accordion" id="nestedAccordion8">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading8-1">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse8-1" aria-expanded="true" aria-controls="nestedCollapse8-1">
+                                        八眼人の性格：
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse8-1" class="accordion-collapse collapse" aria-labelledby="nestedHeading8-1" data-bs-parent="#nestedAccordion8">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <div class="caption">八眼人の性格</div>
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <p class="text">
+                                             
+                                        </p> 
+                                    </div>
+                                </div>
+                            </div>                          
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading8-2">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse8-2" aria-expanded="true" aria-controls="nestedCollapse8-2">
+                                        八眼人の恋愛と結婚観
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse8-2" class="accordion-collapse collapse" aria-labelledby="nestedHeading8-2" data-bs-parent="#nestedAccordion8">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <p class="text">
+                                              
+                                        </p>
+                                        <p class="text">
+                                            
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading8-3">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse8-3" aria-expanded="true" aria-controls="nestedCollapse8-3">
+                                        八眼人に適した職業
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse8-3" class="accordion-collapse collapse" aria-labelledby="nestedHeading8-3" data-bs-parent="#nestedAccordion8">
+                                    <div class="accordion-body">
+                                        <div class="caption"></div>
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <div class="caption"></div>
+                                        <p class="text">
+                                                  
+                                        </p>
+                                        <div class="caption"></div>
+                                        <p class="text">
+                                              
+                                        </p> 
+                                        <div class="caption"></div>
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <div class="caption"></div>
+                                        <p class="text">
+                                                
+                                        </p>
+                                        <div class="caption"></div>
+                                        <p class="text">
+                                            
+                                        </p>  
+                                        <p class="text">
+                                            結論：</p>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading8-4">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse8-4" aria-expanded="true" aria-controls="nestedCollapse8-4">
+                                        八眼人が気を付けるべきこと
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse8-4" class="accordion-collapse collapse" aria-labelledby="nestedHeading8-4" data-bs-parent="#nestedAccordion8">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                              
+                                        </p>
+                                        <p class="text">
+                                             
+                                        </p>
+                                        <p class="text">
+                                               
+                                        </p> 
+                                        <p class="text">
+                                            
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading8-5">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse8-5" aria-expanded="true" aria-controls="nestedCollapse8-5">
+                                        八眼人が健康で注意すべき事
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse8-5" class="accordion-collapse collapse" aria-labelledby="nestedHeading8-5" data-bs-parent="#nestedAccordion8">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                             
+                                        </p>
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <p class="text">
+                                            
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading8-6">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse8-6" aria-expanded="true" aria-controls="nestedCollapse8-6">
+                                        ラッキーカラー:
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse8-6" class="accordion-collapse collapse" aria-labelledby="nestedHeading8-6" data-bs-parent="#nestedAccordion8">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            
+                                        </p>   
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading8-7">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse8-7" aria-expanded="true" aria-controls="nestedCollapse8-7">
+                                        八眼人の有名人
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse8-7" class="accordion-collapse collapse" aria-labelledby="nestedHeading8-7" data-bs-parent="#nestedAccordion8">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            
+                                        </p>   
+                                        <p class="text">
+                                              
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+    
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9">
+                        <strong class="name">九眼人</strong>
+                        <p class="subtitle">-  -</p>
+                    </button>
+                </div>
+                <div id="collapse9" class="accordion-collapse collapse" data-bs-parent="#accordionGanjin">
+                    <div class="accordion-body">
+                        <div class="caption">
+                            
+                        </div>
+                        <p class="text">
+                            
+                        </p>
+                        <p class="text">
+                           
+                        </p>
+                        <div class="accordion" id="nestedAccordion9">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading9-1">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse9-1" aria-expanded="true" aria-controls="nestedCollapse9-1">
+                                        九眼人の性格：
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse9-1" class="accordion-collapse collapse" aria-labelledby="nestedHeading9-1" data-bs-parent="#nestedAccordion9">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <div class="caption">九眼人の性格</div>
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <p class="text">
+                                             
+                                        </p> 
+                                    </div>
+                                </div>
+                            </div>                          
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading9-2">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse9-2" aria-expanded="true" aria-controls="nestedCollapse9-2">
+                                        九眼人の恋愛と結婚観
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse9-2" class="accordion-collapse collapse" aria-labelledby="nestedHeading9-2" data-bs-parent="#nestedAccordion9">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <p class="text">
+                                              
+                                        </p>
+                                        <p class="text">
+                                            
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading9-3">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse9-3" aria-expanded="true" aria-controls="nestedCollapse9-3">
+                                        九眼人に適した職業
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse9-3" class="accordion-collapse collapse" aria-labelledby="nestedHeading9-3" data-bs-parent="#nestedAccordion9">
+                                    <div class="accordion-body">
+                                        <div class="caption"></div>
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <div class="caption"></div>
+                                        <p class="text">
+                                                  
+                                        </p>
+                                        <div class="caption"></div>
+                                        <p class="text">
+                                              
+                                        </p> 
+                                        <div class="caption"></div>
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <div class="caption"></div>
+                                        <p class="text">
+                                                
+                                        </p>
+                                        <div class="caption"></div>
+                                        <p class="text">
+                                            
+                                        </p>  
+                                        <p class="text">
+                                            結論：</p>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading9-4">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse9-4" aria-expanded="true" aria-controls="nestedCollapse9-4">
+                                        九眼人が気を付けるべきこと
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse9-4" class="accordion-collapse collapse" aria-labelledby="nestedHeading9-4" data-bs-parent="#nestedAccordion9">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                              
+                                        </p>
+                                        <p class="text">
+                                             
+                                        </p>
+                                        <p class="text">
+                                               
+                                        </p> 
+                                        <p class="text">
+                                            
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading9-5">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse9-5" aria-expanded="true" aria-controls="nestedCollapse9-5">
+                                        九眼人が健康で注意すべき事
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse9-5" class="accordion-collapse collapse" aria-labelledby="nestedHeading9-5" data-bs-parent="#nestedAccordion9">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                             
+                                        </p>
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <p class="text">
+                                            
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading9-6">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse9-6" aria-expanded="true" aria-controls="nestedCollapse9-6">
+                                        ラッキーカラー:
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse9-6" class="accordion-collapse collapse" aria-labelledby="nestedHeading9-6" data-bs-parent="#nestedAccordion9">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            
+                                        </p>   
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading9-7">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse9-7" aria-expanded="true" aria-controls="nestedCollapse9-7">
+                                        九眼人の有名人
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse9-7" class="accordion-collapse collapse" aria-labelledby="nestedHeading9-7" data-bs-parent="#nestedAccordion9">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            
+                                        </p>   
+                                        <p class="text">
+                                              
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+    
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10">
+                        <strong class="name">十眼人</strong>
+                        <p class="subtitle">-  -</p>
+                    </button>
+                </div>
+                <div id="collapse10" class="accordion-collapse collapse" data-bs-parent="#accordionGanjin">
+                    <div class="accordion-body">
+                        <div class="caption">
+                            
+                        </div>
+                        <p class="text">
+                            
+                        </p>
+                        <p class="text">
+                           
+                        </p>
+                        <div class="accordion" id="nestedAccordion10">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading10-1">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse10-1" aria-expanded="true" aria-controls="nestedCollapse10-1">
+                                        十眼人の性格：
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse10-1" class="accordion-collapse collapse" aria-labelledby="nestedHeading10-1" data-bs-parent="#nestedAccordion10">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <div class="caption">十眼人の性格</div>
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <p class="text">
+                                             
+                                        </p> 
+                                    </div>
+                                </div>
+                            </div>                          
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading10-2">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse10-2" aria-expanded="true" aria-controls="nestedCollapse10-2">
+                                        十眼人の恋愛と結婚観
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse10-2" class="accordion-collapse collapse" aria-labelledby="nestedHeading10-2" data-bs-parent="#nestedAccordion10">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <p class="text">
+                                              
+                                        </p>
+                                        <p class="text">
+                                            
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading10-3">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse10-3" aria-expanded="true" aria-controls="nestedCollapse10-3">
+                                        十眼人に適した職業
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse10-3" class="accordion-collapse collapse" aria-labelledby="nestedHeading10-3" data-bs-parent="#nestedAccordion10">
+                                    <div class="accordion-body">
+                                        <div class="caption"></div>
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <div class="caption"></div>
+                                        <p class="text">
+                                                  
+                                        </p>
+                                        <div class="caption"></div>
+                                        <p class="text">
+                                              
+                                        </p> 
+                                        <div class="caption"></div>
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <div class="caption"></div>
+                                        <p class="text">
+                                                
+                                        </p>
+                                        <div class="caption"></div>
+                                        <p class="text">
+                                            
+                                        </p>  
+                                        <p class="text">
+                                            結論：</p>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading10-4">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse10-4" aria-expanded="true" aria-controls="nestedCollapse10-4">
+                                        十眼人が気を付けるべきこと
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse10-4" class="accordion-collapse collapse" aria-labelledby="nestedHeading10-4" data-bs-parent="#nestedAccordion10">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                              
+                                        </p>
+                                        <p class="text">
+                                             
+                                        </p>
+                                        <p class="text">
+                                               
+                                        </p> 
+                                        <p class="text">
+                                            
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading10-5">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse10-5" aria-expanded="true" aria-controls="nestedCollapse10-5">
+                                        十眼人が健康で注意すべき事
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse10-5" class="accordion-collapse collapse" aria-labelledby="nestedHeading10-5" data-bs-parent="#nestedAccordion10">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                             
+                                        </p>
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <p class="text">
+                                            
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading10-6">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse10-6" aria-expanded="true" aria-controls="nestedCollapse10-6">
+                                        ラッキーカラー:
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse10-6" class="accordion-collapse collapse" aria-labelledby="nestedHeading10-6" data-bs-parent="#nestedAccordion10">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            
+                                        </p>   
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading10-7">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse10-7" aria-expanded="true" aria-controls="nestedCollapse10-7">
+                                        十眼人の有名人
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse10-7" class="accordion-collapse collapse" aria-labelledby="nestedHeading10-7" data-bs-parent="#nestedAccordion10">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            
+                                        </p>   
+                                        <p class="text">
+                                              
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+    
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse11">
+                        <strong class="name">十一眼人</strong>
+                        <p class="subtitle">-  -</p>
+                    </button>
+                </div>
+                <div id="collapse11" class="accordion-collapse collapse" data-bs-parent="#accordionGanjin">
+                    <div class="accordion-body">
+                        <div class="caption">
+                            
+                        </div>
+                        <p class="text">
+                            
+                        </p>
+                        <p class="text">
+                           
+                        </p>
+                        <div class="accordion" id="nestedAccordion11">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading11-1">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse11-1" aria-expanded="true" aria-controls="nestedCollapse11-1">
+                                        十一眼人の性格：
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse11-1" class="accordion-collapse collapse" aria-labelledby="nestedHeading11-1" data-bs-parent="#nestedAccordion11">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <div class="caption">十一眼人の性格</div>
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <p class="text">
+                                             
+                                        </p> 
+                                    </div>
+                                </div>
+                            </div>                          
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading11-2">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse11-2" aria-expanded="true" aria-controls="nestedCollapse11-2">
+                                        十一眼人の恋愛と結婚観
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse11-2" class="accordion-collapse collapse" aria-labelledby="nestedHeading11-2" data-bs-parent="#nestedAccordion11">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <p class="text">
+                                              
+                                        </p>
+                                        <p class="text">
+                                            
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading11-3">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse11-3" aria-expanded="true" aria-controls="nestedCollapse11-3">
+                                        十一眼人に適した職業
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse11-3" class="accordion-collapse collapse" aria-labelledby="nestedHeading11-3" data-bs-parent="#nestedAccordion11">
+                                    <div class="accordion-body">
+                                        <div class="caption"></div>
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <div class="caption"></div>
+                                        <p class="text">
+                                                  
+                                        </p>
+                                        <div class="caption"></div>
+                                        <p class="text">
+                                              
+                                        </p> 
+                                        <div class="caption"></div>
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <div class="caption"></div>
+                                        <p class="text">
+                                                
+                                        </p>
+                                        <div class="caption"></div>
+                                        <p class="text">
+                                            
+                                        </p>  
+                                        <p class="text">
+                                            結論：</p>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading11-4">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse11-4" aria-expanded="true" aria-controls="nestedCollapse11-4">
+                                        十一眼人が気を付けるべきこと
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse11-4" class="accordion-collapse collapse" aria-labelledby="nestedHeading11-4" data-bs-parent="#nestedAccordion11">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                              
+                                        </p>
+                                        <p class="text">
+                                             
+                                        </p>
+                                        <p class="text">
+                                               
+                                        </p> 
+                                        <p class="text">
+                                            
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading11-5">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse11-5" aria-expanded="true" aria-controls="nestedCollapse11-5">
+                                        十一眼人が健康で注意すべき事
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse11-5" class="accordion-collapse collapse" aria-labelledby="nestedHeading11-5" data-bs-parent="#nestedAccordion11">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                             
+                                        </p>
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <p class="text">
+                                            
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading11-6">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse11-6" aria-expanded="true" aria-controls="nestedCollapse11-6">
+                                        ラッキーカラー:
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse11-6" class="accordion-collapse collapse" aria-labelledby="nestedHeading11-6" data-bs-parent="#nestedAccordion11">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            
+                                        </p>   
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading11-7">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse11-7" aria-expanded="true" aria-controls="nestedCollapse11-7">
+                                        十一眼人の有名人
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse11-7" class="accordion-collapse collapse" aria-labelledby="nestedHeading11-7" data-bs-parent="#nestedAccordion11">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            
+                                        </p>   
+                                        <p class="text">
+                                              
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+    
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse12">
+                        <strong class="name">十二眼人</strong>
+                        <p class="subtitle">-  -</p>
+                    </button>
+                </div>
+                <div id="collapse12" class="accordion-collapse collapse" data-bs-parent="#accordionGanjin">
+                    <div class="accordion-body">
+                        <div class="caption">
+                            
+                        </div>
+                        <p class="text">
+                            
+                        </p>
+                        <p class="text">
+                           
+                        </p>
+                        <div class="accordion" id="nestedAccordion12">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading12-1">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse12-1" aria-expanded="true" aria-controls="nestedCollapse12-1">
+                                        十二眼人の性格：
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse12-1" class="accordion-collapse collapse" aria-labelledby="nestedHeading12-1" data-bs-parent="#nestedAccordion12">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <div class="caption">十二眼人の性格</div>
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <p class="text">
+                                             
+                                        </p> 
+                                    </div>
+                                </div>
+                            </div>                          
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading12-2">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse12-2" aria-expanded="true" aria-controls="nestedCollapse12-2">
+                                        十二眼人の恋愛と結婚観
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse12-2" class="accordion-collapse collapse" aria-labelledby="nestedHeading12-2" data-bs-parent="#nestedAccordion12">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <p class="text">
+                                              
+                                        </p>
+                                        <p class="text">
+                                            
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading12-3">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse12-3" aria-expanded="true" aria-controls="nestedCollapse12-3">
+                                        十二眼人に適した職業
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse12-3" class="accordion-collapse collapse" aria-labelledby="nestedHeading12-3" data-bs-parent="#nestedAccordion12">
+                                    <div class="accordion-body">
+                                        <div class="caption"></div>
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <div class="caption"></div>
+                                        <p class="text">
+                                                  
+                                        </p>
+                                        <div class="caption"></div>
+                                        <p class="text">
+                                              
+                                        </p> 
+                                        <div class="caption"></div>
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <div class="caption"></div>
+                                        <p class="text">
+                                                
+                                        </p>
+                                        <div class="caption"></div>
+                                        <p class="text">
+                                            
+                                        </p>  
+                                        <p class="text">
+                                            結論：</p>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading12-4">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse12-4" aria-expanded="true" aria-controls="nestedCollapse12-4">
+                                        十二眼人が気を付けるべきこと
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse12-4" class="accordion-collapse collapse" aria-labelledby="nestedHeading12-4" data-bs-parent="#nestedAccordion12">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                              
+                                        </p>
+                                        <p class="text">
+                                             
+                                        </p>
+                                        <p class="text">
+                                               
+                                        </p> 
+                                        <p class="text">
+                                            
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading12-5">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse12-5" aria-expanded="true" aria-controls="nestedCollapse12-5">
+                                        十二眼人が健康で注意すべき事
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse12-5" class="accordion-collapse collapse" aria-labelledby="nestedHeading12-5" data-bs-parent="#nestedAccordion12">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                             
+                                        </p>
+                                        <p class="text">
+                                            
+                                        </p>
+                                        <p class="text">
+                                            
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading12-6">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse12-6" aria-expanded="true" aria-controls="nestedCollapse12-6">
+                                        ラッキーカラー:
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse12-6" class="accordion-collapse collapse" aria-labelledby="nestedHeading12-6" data-bs-parent="#nestedAccordion12">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            
+                                        </p>   
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="nestedHeading12-7">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapse12-7" aria-expanded="true" aria-controls="nestedCollapse12-7">
+                                        十二眼人の有名人
+                                    </button>
+                                </h2>
+                                <div id="nestedCollapse12-7" class="accordion-collapse collapse" aria-labelledby="nestedHeading12-7" data-bs-parent="#nestedAccordion12">
+                                    <div class="accordion-body">
+                                        <p class="text">
+                                            
+                                        </p>   
+                                        <p class="text">
+                                              
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <script>
+        function formatTextForHTML(text) {
+            return text.replace(/。(?!$)/g, "。<br>");
+        }
+    
+        window.onload = function() {
+            let textElements = document.querySelectorAll(".text");
+            textElements.forEach(function(element) {
+                element.innerHTML = formatTextForHTML(element.innerHTML);
+            });
+        };
+    </script>
+    
+    <footer class="pb-3">
+        <div class="container">
+            <div class="footerSns">
+                <a href="#">
+                    <img src="../img/Instagram.png" class="sns-icon">
+                </a>
+                <a href="#">
+                    <img src="../img/x.png" class="sns-icon">
+                </a>
+                <a href="#">
+                    <img src="../img/LINE.png" class="sns-icon">
+                </a>
+                <a href="#">
+                    <img src="../img/mercari.png" class="sns-icon">
+                </a>
+            </div>
+        </div>  
+        <div class="logo">
+            <a href="home.html">
+                <img src="../img/logo.jpg">
+            </a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
