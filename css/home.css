@@ -92,7 +92,7 @@ body.fixed-nav-padding {
     }
 
     .swf {
-        height: 500px
+        height: 100%;
     }
 
     .swf video {
@@ -118,12 +118,19 @@ body.fixed-nav-padding {
     text-align: end;
 }
 
+.top001 {
+    margin-top: 3rem;
+}
+
 .top001 img {
     width: 437px;
     height: 377px;
 }
 
 @media (max-width: 767px){
+    .top001 {
+        margin-top: 0px;
+    }
     .top001 img {
         display: block;
         width: 100%;
