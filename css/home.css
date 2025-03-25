@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Sacramento&family=Playfair+Display:wght@400;600&display=swap');
+
 body {
     margin: 0px;
     font-size: 14px;
+    font-family: 'Baloo 2', 'Quicksand', 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 16px;
 }
 
 img {
@@ -40,16 +46,29 @@ body.fixed-nav-padding {
     padding-top: 10px;
 }
 
-.navbar-toggler-icon {
-    filter: invert(1);
+.navbar-toggler {
+    background-color: white;
+    border-radius: 50%; 
+    padding: 10px;
 }
 
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='black' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    width: 24px; 
+    height: 24px;
+}
+   
 #navbarNavDropdown {
     flex-direction: column;
 }
 
+.nav-link {
+    line-height: 2.5;
+    font-size: 16px;
+}
+
 .sns-icon {
-    width: 30px;
+    width: 35px;
     margin: 0 5px;
 }
 
@@ -86,7 +105,7 @@ body.fixed-nav-padding {
     }
 
     #navbarNavDropdown {
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: #fff;
         padding-left: 20px;
         padding-bottom: 20px;
     }
