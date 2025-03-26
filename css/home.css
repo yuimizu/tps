@@ -98,11 +98,20 @@ body.fixed-nav-padding {
 }
 
 @media (max-width: 767px){
+
     .navbar {
         background-color: transparent;
         position: fixed;
         top: 15px;
-        right: 22px;
+        right: 0; 
+        width: 100%; 
+        padding-right: 18px; 
+    }
+    
+    .navbar-toggler {
+        position: absolute;
+        right: 18px;
+        top: 5px; 
     }
 
     #navbarNavDropdown {
