@@ -102,7 +102,7 @@ body.fixed-nav-padding {
         background-color: transparent;
         position: fixed;
         top: 15px;
-        right: 20px;
+        right: 25px;
     }
 
     #navbarNavDropdown {
@@ -246,6 +246,10 @@ body.fixed-nav-padding {
     background-color: #333;
     color: #fff;
     padding: 10px 0px;
+}
+
+footer {
+    background-color: white;
 }
 
 .footerSns {
