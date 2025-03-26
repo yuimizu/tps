@@ -47,7 +47,8 @@ body.fixed-nav-padding {
 }
 
 .navbar-toggler {
-    background-color: white; 
+    background-color: white;
+    border-radius: 50%; 
     padding: 10px;
 }
 
@@ -109,7 +110,7 @@ body.fixed-nav-padding {
     
     .navbar-toggler {
         position: absolute;
-        right: 18px;
+        right: 12px;
         top: 5px; 
     }
 
