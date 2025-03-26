@@ -68,7 +68,7 @@ body.fixed-nav-padding {
 }
 
 .sns-icon {
-    width: 35px;
+    width: 40px;
     margin: 0 5px;
 }
 
@@ -101,12 +101,13 @@ body.fixed-nav-padding {
     .navbar {
         background-color: transparent;
         position: fixed;
-        top: 0;
+        top: 15px;
+        right: 20px;
     }
 
     #navbarNavDropdown {
         background-color: #fff;
-        padding-left: 20px;
+        padding-left: 50px;
         padding-bottom: 20px;
     }
 
@@ -245,10 +246,6 @@ body.fixed-nav-padding {
     background-color: #333;
     color: #fff;
     padding: 10px 0px;
-}
-
-footer {
-    background-color: #f7f7f7;
 }
 
 .footerSns {
